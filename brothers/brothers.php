@@ -6,6 +6,7 @@ $pointsClass = "nav-link";
 $attendanceClass = "nav-link";
 $demographicsClass = "nav-link";
 include "../universal/view-header.php";
+include "../universal/db-connection.php";
 ?>
 
 <h1>Brothers</h1>
