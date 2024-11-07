@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Home";
-include "universal/view-footer.php";
+include "universal/view-header.php";
 ?>
 
 <h1>Home</h1>
