@@ -44,7 +44,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="/brothers/brothers.php">Full Roster</a></li>
-                <li><a class="dropdown-item" href="/brothers/filters.php">Filters</a></li>
+                <li><a class="dropdown-item" href="/filters/filters.php">Filters</a></li>
               </ul>
             </li>
             <li class="nav-item">
