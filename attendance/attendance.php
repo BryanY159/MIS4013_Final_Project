@@ -17,6 +17,6 @@ include "../universal/view-header.php";
 <p>Info here</p>
 
 <?php
-include "page.php";
+include "view.php";
 include "../universal/view-footer.php";
 ?>
