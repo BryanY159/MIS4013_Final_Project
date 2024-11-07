@@ -36,10 +36,10 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="<?=$homeClass?>" href="/">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="<?=$brothersClass?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Brothers
               </a>
               <ul class="dropdown-menu">
@@ -48,13 +48,13 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/points/points.php">Points</a>
+              <a class="<?=$pointsClass?>" href="/points/points.php">Points</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/attendance/attendance.php">Attendance</a>
+              <a class="<?=$attendanceClass?>" href="/attendance/attendance.php">Attendance</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/demographics/demographics.php">Demographics</a>
+              <a class="<?=$demographicsClass?>" href="/demographics/demographics.php">Demographics</a>
             </li>
           </ul>
         </div>
