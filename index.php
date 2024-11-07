@@ -1,5 +1,10 @@
 <?php
 $pageTitle = "Home";
+$homeClass = "nav-link active";
+$brotherClass = "nav-link dropdown-toggle";
+$pointsClass = "nav-link";
+$attendanceClass = "nav-link";
+$demographicsClass = "nav-link";
 include "universal/view-header.php";
 ?>
 
