@@ -5,7 +5,8 @@ $brothersClass = "nav-link dropdown-toggle";
 $pointsClass = "nav-link active";
 $attendanceClass = "nav-link";
 $demographicsClass = "nav-link";
-include "..universal/view-header.php";
+include "../universal/view-header.php";
+include "../universal/db-connection.php";
 ?>
 
 <h1>Points</h1>
@@ -13,5 +14,5 @@ include "..universal/view-header.php";
 <p>Info here</p>
 
 <?php
-include "..universal/view-footer.php";
+include "../universal/view-footer.php";
 ?>
