@@ -1,4 +1,11 @@
-<h1>Brothers</h1>
+<div class = "row">
+  <div class = "col">
+    <h1>Brothers</h1>
+  </div>
+  <div class = "col-auto">
+    Add
+  </div>
+</div>
 
 <div class="table-responsive">
   <table class="table">
