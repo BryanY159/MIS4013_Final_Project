@@ -21,7 +21,7 @@
         while($brother = $brothers->fetch_assoc()) { ?>
           <tr>
             <td><?php echo $brother['FirstName'];?> <?php echo $brother['LastName'];?></td>
-            <td><?php echo $brother['InstrumentName'];?></td>
+            <td><?php echo $brother['SectionName'];?></td>
             <td><?php echo $brother['Status'];?></td>
             <td><?php echo $brother['MembershipClass'];?></td>
             <td><?php echo $brother['InitiationYear'];?></td>
