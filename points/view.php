@@ -12,11 +12,11 @@
     <thead>
       <tr>
         <th>Name</th>
-        <td>Completed?</td>
+        <th>Completed?</th>
         <th>Service Points</th>
-        <td></td>
+        <th></th>
         <th>Brotherhood Points</th>
-        <td></td>
+        <th></th>
       </tr>
     </thead>
     <tbody>
