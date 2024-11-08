@@ -1,6 +1,6 @@
 <div class = "row">
   <div class = "col">
-    <h1>Full Roster</h1>
+    <h1>Filters</h1>
   </div>
   <div class = "col-auto">
     <button class="btn btn-info">Need Help?</button>
