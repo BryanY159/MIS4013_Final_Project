@@ -5,7 +5,7 @@
     <!-- Section Card -->
     <div class="col-md-3 mb-3">
       <div class="card">
-        <h3 class="card-title text-center">Sections</h3>
+        <h3 class="card-title text-center" style="margin-top:15px">Sections</h3>
         <div class="card-body">
           <div class="row">
             <div class="col-6 mb-2">
