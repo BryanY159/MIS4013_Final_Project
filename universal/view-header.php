@@ -24,7 +24,7 @@
     <script src="https://cdn.jsdelivr.net/npm/intro.js/minified/intro.min.js"></script>
   </head>
   
-  <body style="margin: 20px;">
+  <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand">
@@ -60,3 +60,5 @@
         </div>
       </div>
     </nav>
+
+    <div style="margin: 20px;">
