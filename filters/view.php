@@ -5,7 +5,7 @@
     <!-- Section Card -->
     <div class="col-md-3 mb-3">
       <div class="card">
-        <h3 class="card-title text-center" style="margin-top:15px">Sections</h3>
+        <h3 class="card-title text-center mt-3">Sections</h3>
         <div class="card-body">
           <div class="row">
             <div class="col-6 mb-2">
@@ -58,9 +58,7 @@
     <!-- Families Card -->
     <div class="col-md-3 mb-3">
       <div class="card">
-        <div class="card-header text-center">
-          <h3 class="card-title">Families</h3>
-        </div>
+        <h3 class="card-title text-center mt-3">Families</h3>
         <div class="card-body">
           <div class="row">
             <div class="col-6 mb-2">
@@ -83,9 +81,7 @@
     <!-- Membership Classes Card -->
     <div class="col-md-3 mb-3">
       <div class="card">
-        <div class="card-header text-center">
-          <h3 class="card-title">Membership Classes</h3>
-        </div>
+        <h3 class="card-title text-center mt-3">Membership Classes</h3>
         <div class="card-body">
           <div class="row">
             <div class="col-6 mb-2">
@@ -105,12 +101,10 @@
       </div>
     </div>
 
-    <!-- Majors/Majors Card -->
+    <!-- Majors/Minors Card -->
     <div class="col-md-3 mb-3">
       <div class="card">
-        <div class="card-header text-center">
-          <h3 class="card-title">Majors/Minors</h3>
-        </div>
+        <h3 class="card-title text-center mt-3">Majors/Minors</h3>
         <div class="card-body">
           <div class="row">
             <div class="col-6 mb-2">
@@ -126,7 +120,7 @@
               <button class="btn btn-primary w-100">Other</button>
             </div>
             <div class="col-6 mb-2">
-              <button class="btn btn-primary w-100">w/ Minors</button>
+              <button class="btn btn-primary w-100">Has Minor(s)</button>
             </div>
           </div>
         </div>
