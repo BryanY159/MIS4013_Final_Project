@@ -13,6 +13,7 @@
         <th>Major(s)</th>
         <th>Minor(s)</th>
         <th></th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -28,6 +29,7 @@
             <td><?php echo $brother['Major'];?></td>
             <td><?php echo $brother['Minor'];?></td>
             <td>Edit</td>
+            <td>Delete</td>
           </tr>
         <?php } ?>
     </tbody>
