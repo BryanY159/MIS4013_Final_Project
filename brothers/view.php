@@ -3,8 +3,8 @@
     <h1>Full Roster</h1>
   </div>
   <div class = "col-auto">
-    <button class="btn btn-info">Need help?</button>
     <?php include "buttons/add-button.php";?>
+    <button class="btn btn-info">Need help?</button>
   </div>
 </div>
 
