@@ -14,7 +14,8 @@
         <th>Name</th>
         <?php
           while($event = $events->fetch_assoc()) { ?>
-            <th><?php echo $event['EventDate'];?> test <?php echo $event['EventName'];?></th>
+            $formattedDate = date("m-d", strtotime($event['EventDate'])); ?>
+            <th><?php echo $formattedDate; ?> <?php echo $event['EventName']; ?></th>
         <?php } ?>
       </tr>
     </thead>
