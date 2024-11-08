@@ -28,34 +28,34 @@
               <button class="btn btn-primary w-100">Trumpets</button>
             </div>
             <div class="col-6 mb-2">
-              <button class="btn btn-secondary w-100">Mellophones</button>
+              <button class="btn btn-danger w-100">Mellophones</button>
             </div>
             <div class="col-6 mb-2">
-              <button class="btn btn-dark w-100">Trombones</button>
+              <button class="btn btn-warning w-100">Trombones</button>
             </div>
             <div class="col-6 mb-2">
-              <button class="btn btn-info w-100">Baritones</button>
+              <button class="btn btn-success w-100">Baritones</button>
             </div>
             <div class="col-6 mb-2">
-              <button class="btn btn-danger w-100">Sousaphones</button>
+              <button class="btn btn-primary w-100">Sousaphones</button>
             </div>
             <div class="col-6 mb-2">
-              <button class="btn btn-warning w-100">Snare</button>
+              <button class="btn btn-danger w-100">Snare</button>
             </div>
             <div class="col-6 mb-2">
-              <button class="btn btn-success w-100">Cymbals</button>
+              <button class="btn btn-warning w-100">Cymbals</button>
             </div>
             <div class="col-6 mb-2">
-              <button class="btn btn-primary w-100">Bass Drum</button>
+              <button class="btn btn-success w-100">Bass Drum</button>
             </div>
             <div class="col-6 mb-2">
-              <button class="btn btn-secondary w-100">Tenors</button>
+              <button class="btn btn-primary w-100">Tenors</button>
             </div>
             <div class="col-6 mb-2">
-              <button class="btn btn-dark w-100">Pit</button>
+              <button class="btn btn-danger w-100">Pit</button>
             </div>
             <div class="col-6 mb-2">
-              <button class="btn btn-info w-100">Guard</button>
+              <button class="btn btn-warning w-100">Guard</button>
             </div>
           </div>
         </div>
@@ -127,7 +127,7 @@
               <button class="btn btn-primary w-100">Other</button>
             </div>
             <div class="col-6 mb-2">
-              <button class="btn btn-info w-100">Has Minor(s)</button>
+              <button class="btn btn-danger w-100">Has Minor(s)</button>
             </div>
           </div>
         </div>
