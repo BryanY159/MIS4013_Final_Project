@@ -12,6 +12,7 @@ $demographicsClass = "nav-link";
 include "../universal/view-header.php";
 
 $attendance = selectAttendance();
+$events = selectEvents();
 
 include "view.php";
 include "../universal/view-footer.php";
