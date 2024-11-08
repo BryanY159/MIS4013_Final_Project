@@ -26,8 +26,22 @@
             <td><?php echo $brother['MembershipClass'];?></td>
             <td><?php echo $brother['InitiationYear'];?></td>
             <td><?php echo $brother['GraduationYear'];?></td>
-            <td><?php echo $brother['Major'];?>, <?php echo $brother['Major2'];?></td>
-            <td><?php echo $brother['Minor'];?></td>
+            <td>
+              <?php 
+                echo $brother['Major'];
+                if (!empty($brother['Major2'])) {
+                  echo "/".$brother['Major2'];
+                }
+              ?>
+            </td>
+            <td>
+                <?php 
+                  echo $brother['Minor'];
+                  if (!empty($brother['Minor2'])) {
+                    echo "/".$brother['Minor2'];
+                  }
+                ?>
+            </td>
             <td>Edit</td>
             <td>Delete</td>
           </tr>
