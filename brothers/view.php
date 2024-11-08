@@ -7,12 +7,11 @@
         <th>Name</th>
         <th>Section</th>
         <th>Status</th>
-        <th>Membership Class</th>
-        <th>Initiation Year</th>
-        <th>Graduation Year</th>
+        <th>Class</th>
+        <th>Initiated</th>
+        <th>Graduates</th>
         <th>Major(s)</th>
         <th>Minor(s)</th>
-        <th></th>
         <th></th>
       </tr>
     </thead>
