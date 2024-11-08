@@ -26,7 +26,7 @@
             <td><?php echo $brother['MembershipClass'];?></td>
             <td><?php echo $brother['InitiationYear'];?></td>
             <td><?php echo $brother['GraduationYear'];?></td>
-            <td><?php echo $brother['Major'];?> <?php echo $brother['Major2'];?></td>
+            <td><?php echo $brother['Major'];?>, <?php echo $brother['Major2'];?></td>
             <td><?php echo $brother['Minor'];?></td>
             <td>Edit</td>
             <td>Delete</td>
