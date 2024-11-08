@@ -8,7 +8,7 @@
       <div class="card">
         <div class="card-header">Section</div>
         <div class="card-body">
-          <button class="btn btn-primary mb-2">Flutes</button>
+          <button class="btn btn-primary mb-2 ml-2">Flutes</button>
           <button class="btn btn-primary mb-2">Clarinets</button>
           <button class="btn btn-primary mb-2 ml-2">Snare</button><br>
           <button class="btn btn-primary mb-2">Saxophones</button>
@@ -33,8 +33,8 @@
         <div class="card-body">
           <button class="btn btn-primary mb-2">Woodwinds</button>
           <button class="btn btn-primary mb-2 ml-2">High Brass</button><br>
-          <button class="btn btn-primary mb-2">Percussion</button>
-          <button class="btn btn-primary mb-2 ml-2">Low Brass</button>
+          <button class="btn btn-primary mb-2">Low Brass</button>
+          <button class="btn btn-primary mb-2 ml-2">Percussion</button>
         </div>
       </div>
     </div>
