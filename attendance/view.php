@@ -14,7 +14,7 @@
         <th>Name</th>
         <?php
           while($event = $events->fetch_assoc()) { ?>
-            <th><?php echo $event['EventDate'];?> <?php echo $event['EventName'];?></th>
+            <th><?php echo $event['EventDate'];?> test <?php echo $event['EventName'];?></th>
         <?php } ?>
       </tr>
     </thead>
