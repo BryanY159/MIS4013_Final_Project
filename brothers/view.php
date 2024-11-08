@@ -1,9 +1,9 @@
 <div class = "row">
   <div class = "col">
-    <h1>Brothers</h1>
+    <h1>Full Roster</h1>
   </div>
   <div class = "col-auto">
-    Add
+    <?php include "buttons/add-button.php";?>
   </div>
 </div>
 
@@ -49,8 +49,8 @@
                   }
                 ?>
             </td>
-            <td>Edit</td>
-            <td>Delete</td>
+            <td><?php include "buttons/edit-button.php";?></td>
+            <td><?php include "buttons/delete-button.php";?></td>
           </tr>
         <?php } ?>
     </tbody>
