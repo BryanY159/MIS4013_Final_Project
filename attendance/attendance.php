@@ -10,13 +10,9 @@ $attendanceClass = "nav-link active";
 $demographicsClass = "nav-link";
 
 include "../universal/view-header.php";
-?>
 
-<h1>Attendance</h1>
+$attendance = selectAttendance();
 
-<p>Info here</p>
-
-<?php
 include "view.php";
 include "../universal/view-footer.php";
 ?>
