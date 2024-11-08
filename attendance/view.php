@@ -12,16 +12,10 @@
     <thead>
       <tr>
         <th>Name</th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <?php
+          while($event = $events->fetch_assoc()) { ?>
+            <th><?php echo $brother['EventDate'];?> <?php echo $brother['EventName'];?></th>
+        <?php } ?>
       </tr>
     </thead>
     <tbody>
