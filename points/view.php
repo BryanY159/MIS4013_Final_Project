@@ -3,7 +3,7 @@
     <h1>Points</h1>
   </div>
   <div class = "col-auto">
-    <button class="btn btn-primary">Need help?</button>
+    <button class="btn btn-info">Need help?</button>
   </div>
 </div>
 
