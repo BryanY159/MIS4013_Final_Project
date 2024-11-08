@@ -6,7 +6,9 @@
     <!-- Section Card -->
     <div class="col-md-3 mb-3">
       <div class="card">
-        <div class="card-header">Section</div>
+        <div class="card-header">
+          <h3 class="card-title">Sections</h3>
+        </div>
         <div class="card-body">
           <button class="btn btn-primary mb-2 ml-2">Flutes</button>
           <button class="btn btn-primary mb-2">Clarinets</button>
