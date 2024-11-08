@@ -22,6 +22,15 @@
     <!-- Intro.js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js/minified/introjs.min.css">
     <script src="https://cdn.jsdelivr.net/npm/intro.js/minified/intro.min.js"></script>
+
+    <style>
+      .table thead th {
+        position: sticky;
+        top: 0;
+        background-color: white; /* Set to match the table's background */
+        z-index: 1; /* Ensure headers stay above other table rows */
+      }
+    </style>
   </head>
   
   <body>
