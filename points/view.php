@@ -3,7 +3,7 @@
     <h1>Points</h1>
   </div>
   <div class = "col-auto">
-    Temp
+    <button class="btn btn-primary">Need help?</button>
   </div>
 </div>
 
@@ -12,9 +12,10 @@
     <thead>
       <tr>
         <th>Name</th>
-        <th>Service</th>
+        <td>Completed?</td>
+        <th>Service Points</th>
         <td></td>
-        <th>Brotherhood</th>
+        <th>Brotherhood Points</th>
         <td></td>
       </tr>
     </thead>
@@ -23,6 +24,7 @@
         while($brother = $brothers->fetch_assoc()) { ?>
           <tr>
             <td><?php echo $brother['FirstName'];?> <?php echo $brother['LastName'];?></td>
+            <td>Temp</td>
             <td><?php echo $brother['ServicePoints'];?></td>
             <td>
               <button class="btn btn-primary">
