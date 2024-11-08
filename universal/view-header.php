@@ -24,7 +24,7 @@
     <script src="https://cdn.jsdelivr.net/npm/intro.js/minified/intro.min.js"></script>
   </head>
   
-  <body>
+  <body style="margin: 20px;">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand">
