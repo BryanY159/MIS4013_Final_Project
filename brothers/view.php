@@ -28,7 +28,6 @@
             <td><?php echo $brother['Major'];?></td>
             <td><?php echo $brother['Minor'];?></td>
             <td>Edit</td>
-            <td>Delete</td>
           </tr>
         <?php } ?>
     </tbody>
