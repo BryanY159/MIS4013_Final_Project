@@ -31,7 +31,9 @@
     <!-- Families Card -->
     <div class="col-md-3 mb-3">
       <div class="card">
-        <h3 class="card-title">Families</h3>
+        <div class="card-header">
+          <h3 class="card-title">Families</h3>
+        </div>
         <div class="card-body">
           <button class="btn btn-primary mb-2">Woodwinds</button>
           <button class="btn btn-primary mb-2 ml-2">High Brass</button><br>
@@ -44,7 +46,9 @@
     <!-- Membership Classes Card -->
     <div class="col-md-3 mb-3">
       <div class="card">
-        <div class="card-header">Membership Classes</div>
+        <div class="card-header">
+          <h3 class="card-title">Membership Classes</h3>
+        </div>
         <div class="card-body">
           <button class="btn btn-primary mb-2">Zeta Mu</button>
           <button class="btn btn-primary mb-2 ml-2">Zeta Nu</button><br>
@@ -57,7 +61,9 @@
     <!-- Majors/Majors Card -->
     <div class="col-md-3 mb-3">
       <div class="card">
-        <div class="card-header">Majors/Majors</div>
+        <div class="card-header">
+          <h3 class="card-title">Majors/Minors</h3>
+        </div>
         <div class="card-body">
           <button class="btn btn-primary mb-2">Music</button>
           <button class="btn btn-primary mb-2 ml-2">Engineering</button><br>
