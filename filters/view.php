@@ -12,18 +12,18 @@
         <div class="card-body">
           <button class="btn btn-primary mb-2 ml-2">Flutes</button>
           <button class="btn btn-primary mb-2">Clarinets</button>
-          <button class="btn btn-primary mb-2 ml-2">Snare</button><br>
-          <button class="btn btn-primary mb-2">Saxophones</button>
-          <button class="btn btn-primary mb-2 ml-2">Cymbals</button><br>
+          <button class="btn btn-primary mb-2 ml-2">Saxophones</button><br>
           <button class="btn btn-primary mb-2">Trumpets</button>
-          <button class="btn btn-primary mb-2 ml-2">Bass Drum</button><br>
-          <button class="btn btn-primary mb-2">Mellophones</button>
-          <button class="btn btn-primary mb-2 ml-2">Tenors</button><br>
-          <button class="btn btn-primary mb-2">Trombone</button>
-          <button class="btn btn-primary mb-2 ml-2">Pit</button><br>
-          <button class="btn btn-primary mb-2">Baritone</button>
-          <button class="btn btn-primary mb-2 ml-2">Guard</button><br>
+          <button class="btn btn-primary mb-2 ml-2">Mellophones</button><br>
+          <button class="btn btn-primary mb-2">Trombones</button>
+          <button class="btn btn-primary mb-2 ml-2">Baritones</button><br>
           <button class="btn btn-primary mb-2">Sousaphones</button>
+          <button class="btn btn-primary mb-2 ml-2">Snare</button><br>
+          <button class="btn btn-primary mb-2">Cymbals</button>
+          <button class="btn btn-primary mb-2 ml-2">Bass Drum</button><br>
+          <button class="btn btn-primary mb-2">Tenors</button>
+          <button class="btn btn-primary mb-2 ml-2">Pit</button><br>
+          <button class="btn btn-primary mb-2">Guard</button>
         </div>
       </div>
     </div>
@@ -31,7 +31,7 @@
     <!-- Families Card -->
     <div class="col-md-3 mb-3">
       <div class="card">
-        <div class="card-header">Families</div>
+        <h3 class="card-title">Families</h3>
         <div class="card-body">
           <button class="btn btn-primary mb-2">Woodwinds</button>
           <button class="btn btn-primary mb-2 ml-2">High Brass</button><br>
