@@ -4,7 +4,7 @@ require_once("model.php");
 
 $pageTitle = "Charts";
 $homeClass = "nav-link";
-$brothersClass = "nav-link dropdown-toggle";
+$brothersClass = "nav-link active dropdown-toggle";
 $pointsClass = "nav-link";
 $attendanceClass = "nav-link";
 
