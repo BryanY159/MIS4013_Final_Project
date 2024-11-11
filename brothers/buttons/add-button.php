@@ -74,6 +74,9 @@
             </select>
           </div>
           <div class="mb-3">
+            <p class="form-text">Please enter "-1" for the following point values if the brother is conditional.</p>
+          </div>
+          <div class="mb-3">
             <label for="SP" class="form-label">Initial Service Points</label>
             <input type="text" class="form-control" id="SP" name="SP">
           </div>
