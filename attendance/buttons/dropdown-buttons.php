@@ -1,11 +1,11 @@
-  if($eventStatus = "Present") {
+  if($eventStatus == "Present") {
     $buttonClass = btn btn-success dropdown-toggle;
   }
-  else if($eventStatus = "Excused") {
+  else if($eventStatus == "Excused") {
     $buttonClass = btn btn-warning dropdown-toggle;
   }
   else {
-    $buttonClass = btn btn-danger dropdown-toggle;
+    $buttonClass == btn btn-danger dropdown-toggle;
   }
 ?>
 
