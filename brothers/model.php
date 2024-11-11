@@ -59,10 +59,26 @@ function selectSectionsForInput() {
 function addBrother($FN, $LN, $MC, $IY, $GY, $Major, $Major2, $Minor, $Minor2, $Status, $SID, $SP, $BP) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO 
+        $stmt = $conn->prepare("
+	INSERT INTO 
         Brothers (FirstName, LastName, MembershipClass, InitiationYear, GraduationYear, Major, Major2, Minor, Minor2, Status, SectionID, ServicePoints, BrotherhoodPoints) 
-		Values   (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+	Values   (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+ 	");
         $stmt->bind_param("sssiisssssiii", $FN, $LN, $MC, $IY, $GY, $Major, $Major2, $Minor, $Minor2, $Status, $SID, $SP, $BP);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function deleteBrother($BID) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("DELETE FROM Brothers WHERE BrotherID = ?");
+        $stmt->bind_param("i", $BID);
         $success = $stmt->execute();
         $conn->close();
         return $success;
