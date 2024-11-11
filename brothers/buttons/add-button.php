@@ -18,43 +18,71 @@
             <label for="LN" class="form-label">Last Name</label>
             <input type="text" class="form-control" id="LN" name="LN">
           </div>
-
-
-          <!-- Need to link initiation year to this -->
           <div class="mb-3">
-            <label for="MC" class="form-label">Membership Class</label>
+            <label for="MC-IY" class="form-label">Membership Class-Initiation Year</label>
             <?php
-              $MembershipClass = selectMembershipClassesForInput();
+              $MembershipClasses = selectMembershipClassesForInput();
             ?>
-            <select class="form-select" id="MC" name="MC">
+            <select class="form-select" id="MC-IY" name="MC-IY">
               <?php while($MembershipClass = $MembershipClasses->fetch_assoc()) { ?>
-                <option><?php echo $MembershipClass['MembershipClass']; ?></option>
+                <option value="<?php echo $MembershipClass['MembershipClass']; ?>|<?php echo $MembershipClass['InitiationYear']; ?>">
+                  <?php echo $MembershipClass['MembershipClass']."-".$MembershipClass['InitiationYear'];?>
+                </option>
               <?php } ?>
             </select>
           </div>
-
-
-          
           <div class="mb-3">
-            <label for="SongID" class="form-label">First Song</label>
+            <label for="GY" class="form-label">Graduation Year</label>
+            <input type="text" class="form-control" id="GY" name="GY">
+          </div>
+          <div class="mb-3">
+            <label for="Major" class="form-label">Major</label>
+            <input type="text" class="form-control" id="Major" name="Major">
+          </div>
+          <div class="mb-3">
+            <label for="Major2" class="form-label">Major2</label>
+            <input type="text" class="form-control" id="Major2" name="Major2">
+          </div>
+          <div class="mb-3">
+            <label for="Minor" class="form-label">Minor</label>
+            <input type="text" class="form-control" id="Minor" name="Minor">
+          </div>
+          <div class="mb-3">
+            <label for="Minor2" class="form-label">Minor2</label>
+            <input type="text" class="form-control" id="Minor2" name="Minor2">
+          </div>
+          <div class="mb-3">
+            <label for="Status" class="form-label">Status</label>
             <?php
-              $songList = selectSongsForInput();
+              $Statuses = selectStatusesForInput();
             ?>
-            <select class="form-select" id="SongID" name="SongID">
-              <?php while($song = $songList->fetch_assoc()) { ?>
-                <option ><?php echo $song['Title']; ?></option>
+            <select class="form-select" id="Status" name="Status">
+              <?php while($Status = $Statuses->fetch_assoc()) { ?>
+                <option><?php echo $Status['Status'];?></option>
               <?php } ?>
             </select>
           </div>
-
-
-          
+          <div class="mb-3">
+            <label for="SID" class="form-label">Section</label>
+            <?php
+              $Sections = selectSectionsForInput();
+            ?>
+            <select class="form-select" id="SID" name="SID">
+              <?php while($Section = $Sections->fetch_assoc()) { ?>
+                <option value="<?php echo $song['SectionID']; ?>"><?php echo $song['SectionName']; ?></option>
+              <?php } ?>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="SP" class="form-label">Initial Service Points</label>
+            <input type="text" class="form-control" id="SP" name="SP">
+          </div>
+          <div class="mb-3">
+            <label for="BP" class="form-label">Initial Brotherhood Points</label>
+            <input type="text" class="form-control" id="BP" name="BP">
+          </div>
           <input type = "hidden" name = "actionType" value = "Add">
-          <button type="submit" class="btn btn-primary">Add Brother</button>
-
-
-
-          
+          <button type="submit" class="btn btn-primary">Add Brother</button>   
         </form>
       </div>
     </div>
