@@ -12,7 +12,7 @@
   <table class="table">
     <thead>
       <tr>
-        <th style="width: 60px; word-wrap: break-word; white-space: normal;">Name</th>
+        <th style="width: 50px; word-wrap: break-word; white-space: normal;">Name</th>
         <th style="width: 50px;">Total</th>
         <th style="width: 50px;"></th>
         <?php
