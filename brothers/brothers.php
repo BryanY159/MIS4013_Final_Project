@@ -14,8 +14,12 @@ if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":
       list($MC, $IY) = explode('|', $_POST['MC-IY']);
+
+      $Major2 = !empty($_POST['Major2']) ? $_POST['Major2'] : null;
+      $Minor2 = !empty($_POST['Minor2']) ? $_POST['Minor2'] : null;
+    
       if (addBrother($_POST['FN'], $_POST['LN'], $MC, $IY, $_POST['GY'], 
-                     $_POST['Major'], $_POST['Major2'], $_POST['Minor'], $_POST['Minor2'], 
+                     $_POST['Major'], $Major2, $_POST['Minor'], $Minor2, 
                      $_POST['Status'], $_POST['SID'], $_POST['SP'], $_POST['BP'])) {
         echo '<div class="alert alert-success" role="alert"> Brother Added Successfully </div>';
       } else {
