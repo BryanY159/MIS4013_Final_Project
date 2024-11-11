@@ -1,6 +1,5 @@
 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addBrotherModal">Add</button>
 
-<!-- Add Modal -->
 <div class="modal fade" id="addBrotherModal" tabindex="-1" aria-labelledby="addBrotherModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -47,19 +46,19 @@
             <input type="text" class="form-control" id="GY" name="GY">
           </div>
           <div class="mb-3">
-            <label for="Major" class="form-label">Major</label>
+            <label for="Major" class="form-label">Major (required)</label>
             <input type="text" class="form-control" id="Major" name="Major">
           </div>
           <div class="mb-3">
-            <label for="Major2" class="form-label">Major2</label>
+            <label for="Major2" class="form-label">2nd Major (optional)</label>
             <input type="text" class="form-control" id="Major2" name="Major2">
           </div>
           <div class="mb-3">
-            <label for="Minor" class="form-label">Minor</label>
+            <label for="Minor" class="form-label">Minor (optional)</label>
             <input type="text" class="form-control" id="Minor" name="Minor">
           </div>
           <div class="mb-3">
-            <label for="Minor2" class="form-label">Minor2</label>
+            <label for="Minor2" class="form-label">2nd Minor (optional)</label>
             <input type="text" class="form-control" id="Minor2" name="Minor2">
           </div>
           <div class="mb-3">
