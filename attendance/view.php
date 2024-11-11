@@ -30,26 +30,26 @@
             <td>
               <?php
                 if($brother['Unexcused_Absences'] > 4) { ?>
-                  <button class="btn btn-danger btn-sm"><?php echo $brother['Unexcused_Absences'];?></button>
+                  <button class="btn btn-danger"><?php echo $brother['Unexcused_Absences'];?></button>
                 <?php }
                 else { ?>
-                  <button class="btn btn-success btn-sm"><?php echo $brother['Unexcused_Absences'];?></button>
+                  <button class="btn btn-success"><?php echo $brother['Unexcused_Absences'];?></button>
                 <?php }
               ?>
             </td>
-            <td><button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#addModal" id="add-button">Edit</button></td>
+            <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#addModal" id="add-button">Edit</button></td>
             <?php
               for ($i = 1; $i <= 10; $i++) {
                 $eventStatus = $brother['Event_1_Status'];
 
               if($brother["Event_{$i}_Status"] == "Present") {
-                $buttonClass = "btn btn-success btn-sm dropdown-toggle";
+                $buttonClass = "btn btn-success dropdown-toggle";
               }
               else if($brother["Event_{$i}_Status"] == "Excused") {
-                $buttonClass = "btn btn-secondary btn-sm dropdown-toggle";
+                $buttonClass = "btn btn-secondary dropdown-toggle";
               }
               else {
-                $buttonClass = "btn btn-danger btn-sm dropdown-toggle";
+                $buttonClass = "btn btn-danger dropdown-toggle";
               }
             ?>
 
