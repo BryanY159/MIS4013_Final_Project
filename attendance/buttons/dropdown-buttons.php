@@ -1,4 +1,3 @@
-<?php
   if($eventStatus = "Present") {
     $buttonClass = btn btn-success dropdown-toggle;
   }
@@ -22,3 +21,5 @@
     </ul>
   </div>
 </td>
+
+<?php
