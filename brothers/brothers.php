@@ -14,11 +14,6 @@ if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":
       list($MC, $IY) = explode('|', $_POST['MC-IY']);
-
-      #Delete?
-      $Minor = !empty($_POST['Minor']) ? $_POST['Minor'] : null;
-      $Major2 = !empty($_POST['Major2']) ? $_POST['Major2'] : null;
-      $Minor2 = !empty($_POST['Minor2']) ? $_POST['Minor2'] : null;
     
       if (addBrother($_POST['FN'], $_POST['LN'], $MC, $IY, $_POST['GY'], 
                      $_POST['Major'], $Major2, $Minor, $Minor2, 
