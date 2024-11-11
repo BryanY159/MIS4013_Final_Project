@@ -19,6 +19,17 @@
             <input type="text" class="form-control" id="LN" name="LN">
           </div>
           <div class="mb-3">
+            <label for="SID" class="form-label">Section</label>
+            <?php
+              $Sections = selectSectionsForInput();
+            ?>
+            <select class="form-select" id="SID" name="SID">
+              <?php while($Section = $Sections->fetch_assoc()) { ?>
+                <option value="<?php echo $Section['SectionID']; ?>"><?php echo $Section['SectionName']; ?></option>
+              <?php } ?>
+            </select>
+          </div>
+          <div class="mb-3">
             <label for="MC-IY" class="form-label">Membership Class-Initiation Year</label>
             <?php
               $MembershipClasses = selectMembershipClassesForInput();
@@ -59,17 +70,6 @@
             <select class="form-select" id="Status" name="Status">
               <?php while($Status = $Statuses->fetch_assoc()) { ?>
                 <option><?php echo $Status['Status'];?></option>
-              <?php } ?>
-            </select>
-          </div>
-          <div class="mb-3">
-            <label for="SID" class="form-label">Section</label>
-            <?php
-              $Sections = selectSectionsForInput();
-            ?>
-            <select class="form-select" id="SID" name="SID">
-              <?php while($Section = $Sections->fetch_assoc()) { ?>
-                <option value="<?php echo $song['SectionID']; ?>"><?php echo $song['SectionName']; ?></option>
               <?php } ?>
             </select>
           </div>
