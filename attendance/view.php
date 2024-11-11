@@ -27,7 +27,6 @@
         while($brother = $attendance->fetch_assoc()) { ?>
           <tr>
             <td><?php echo $brother['FirstName'];?> <?php echo $brother['LastName'];?></td>
-            <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#addModal" id="add-button">Edit</button></td>
             <td>
               <?php
                 if($brother['Unexcused_Absences'] > 4) { ?>
@@ -38,6 +37,7 @@
                 <?php }
               ?>
             </td>
+            <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#addModal" id="add-button">Edit</button></td>
             <?php
               for ($i = 1; $i <= 10; $i++) {
                 $eventStatus = $brother['Event_1_Status'];
