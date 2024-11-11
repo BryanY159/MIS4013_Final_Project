@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?=$pageTitle?></title>
+    <title><?php echo $pageTitle?></title>
     <link rel="icon" type="image/x-icon" href="/universal/img/kky-crest.png">
 
     <!-- Bootstrap -->
@@ -45,10 +45,10 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="<?=$homeClass?>" href="/">Home</a>
+              <a class="<?php echo $homeClass?>" href="/">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="<?=$brothersClass?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="<?php echo $brothersClass?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Brothers
               </a>
               <ul class="dropdown-menu">
@@ -57,13 +57,13 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="<?=$pointsClass?>" href="/points/points.php">Points</a>
+              <a class="<?php echo $pointsClass?>" href="/points/points.php">Points</a>
             </li>
             <li class="nav-item">
-              <a class="<?=$attendanceClass?>" href="/attendance/attendance.php">Attendance</a>
+              <a class="<?php echo $attendanceClass?>" href="/attendance/attendance.php">Attendance</a>
             </li>
             <li class="nav-item">
-              <a class="<?=$demographicsClass?>" href="/demographics/demographics.php">Demographics</a>
+              <a class="<?php echo $demographicsClass?>" href="/demographics/demographics.php">Demographics</a>
             </li>
           </ul>
         </div>
