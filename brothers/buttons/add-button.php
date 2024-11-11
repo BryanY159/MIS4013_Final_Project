@@ -21,23 +21,23 @@
           <div class="mb-3">
             <label for="SID" class="form-label">Section</label>
             <?php
-              $Sections = selectSectionsForInput();
+              $sections = selectSectionsForInput();
             ?>
             <select class="form-select" id="SID" name="SID">
-              <?php while($Section = $Sections->fetch_assoc()) { ?>
-                <option value="<?php echo $Section['SectionID']; ?>"><?php echo $Section['SectionName']; ?></option>
+              <?php while($section = $sections->fetch_assoc()) { ?>
+                <option value="<?php echo $section['SectionID']; ?>"><?php echo $section['SectionName']; ?></option>
               <?php } ?>
             </select>
           </div>
           <div class="mb-3">
             <label for="MC-IY" class="form-label">Membership Class-Initiation Year</label>
             <?php
-              $MembershipClasses = selectMembershipClassesForInput();
+              $membershipClasses = selectMembershipClassesForInput();
             ?>
             <select class="form-select" id="MC-IY" name="MC-IY">
-              <?php while($MembershipClass = $MembershipClasses->fetch_assoc()) { ?>
-                <option value="<?php echo $MembershipClass['MembershipClass']; ?>|<?php echo $MembershipClass['InitiationYear']; ?>">
-                  <?php echo $MembershipClass['MembershipClass']."-".$MembershipClass['InitiationYear'];?>
+              <?php while($membershipClass = $membershipClasses->fetch_assoc()) { ?>
+                <option value="<?php echo $membershipClass['MembershipClass']; ?>|<?php echo $membershipClass['InitiationYear']; ?>">
+                  <?php echo $membershipClass['MembershipClass']."-".$membershipClass['InitiationYear'];?>
                 </option>
               <?php } ?>
             </select>
@@ -65,11 +65,11 @@
           <div class="mb-3">
             <label for="Status" class="form-label">Status</label>
             <?php
-              $Statuses = selectStatusesForInput();
+              $statuses = selectStatusesForInput();
             ?>
             <select class="form-select" id="Status" name="Status">
-              <?php while($Status = $Statuses->fetch_assoc()) { ?>
-                <option><?php echo $Status['Status'];?></option>
+              <?php while($status = $statuses->fetch_assoc()) { ?>
+                <option><?php echo $status['Status'];?></option>
               <?php } ?>
             </select>
           </div>
