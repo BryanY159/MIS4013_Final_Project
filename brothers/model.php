@@ -14,21 +14,7 @@ function selectBrothers() {
     }
 }
 
-function selectSectionsForInput() {
-    try {
-        $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT SectionID, SectionName FROM Sections");
-        $stmt->execute();
-        $result = $stmt->get_result();
-        $conn->close();
-        return $result;
-    } catch (Exception $e) {
-        $conn->close();
-        throw $e;
-    }
-}
-
-function selectMembershipClassForInput() {
+function selectMembershipClassesForInput() {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT Distinct MembershipClass, InitiationYear FROM Brothers ORDER BY InitiationYear");
@@ -42,10 +28,24 @@ function selectMembershipClassForInput() {
     }
 }
 
-function selectStatusForInput() {
+function selectStatusesForInput() {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT Distinct Status FROM Brothers");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function selectSectionsForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT SectionID, SectionName FROM Sections");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
