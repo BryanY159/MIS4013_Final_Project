@@ -12,9 +12,9 @@
   <table class="table">
     <thead>
       <tr>
-        <th>Name</th>
-        <th>Total</th>
-        <th></th>
+        <th style="width: 80px;">Name</th>
+        <th style="width: 80px;">Total</th>
+        <th style="width: 80px;"></th>
         <?php
           while($event = $events->fetch_assoc()) {
             $formattedDate = date("m-d", strtotime($event['EventDate'])); ?>
