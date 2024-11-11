@@ -53,7 +53,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="/brothers/brothers.php">Full Roster</a></li>
-                <li><a class="dropdown-item" href="/filters/filters.php">Filters</a></li>
+                <li><a class="dropdown-item" href="/charts/charts.php">Charts</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -61,9 +61,6 @@
             </li>
             <li class="nav-item">
               <a class="<?php echo $attendanceClass?>" href="/attendance/attendance.php">Attendance</a>
-            </li>
-            <li class="nav-item">
-              <a class="<?php echo $demographicsClass?>" href="/demographics/demographics.php">Demographics</a>
             </li>
           </ul>
         </div>
