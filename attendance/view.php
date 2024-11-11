@@ -18,7 +18,7 @@
         <?php
           while($event = $events->fetch_assoc()) {
             $formattedDate = date("m-d", strtotime($event['EventDate'])); ?>
-            <th style="width: 90px; word-wrap: break-word; white-space: normal;"><?php echo $formattedDate; ?> <?php echo $event['EventName']; ?></th>
+            <th style="width: 95px; word-wrap: break-word; white-space: normal;"><?php echo $formattedDate; ?> <?php echo $event['EventName']; ?></th>
         <?php } ?>
       </tr>
     </thead>
@@ -55,7 +55,7 @@
 
             <td>
               <div class="dropdown">
-                <button class="<?php echo $buttonClass;?>" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 90px;">
+                <button class="<?php echo $buttonClass;?>" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 95px;">
                   <?php echo $brother["Event_{$i}_Status"];?>
                 </button>
                 <ul class="dropdown-menu">
