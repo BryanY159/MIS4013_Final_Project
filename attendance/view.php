@@ -12,7 +12,7 @@
   <table class="table">
     <thead>
       <tr>
-        <th style="width: 50px; text-align: center; word-wrap: break-word; white-space: normal;">Name</th>
+        <th style="width: 100px; text-align: center; word-wrap: break-word; white-space: normal;">Name</th>
         <th style="width: 50px; text-align: center;">Total</th>
         <th style="width: 50px; text-align: center;"></th>
         <?php
@@ -37,7 +37,7 @@
                 <?php }
               ?>
             </td>
-            <td><button class="btn btn-warning" style="width: 50px;">Edit</button></td>
+            <td><button class="btn btn-warning btn-sm" style="width: 50px;">Edit</button></td>
             <?php
               for ($i = 1; $i <= 10; $i++) {
                 $eventStatus = $brother['Event_1_Status'];
