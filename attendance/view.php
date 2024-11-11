@@ -43,13 +43,13 @@
                 $eventStatus = $brother['Event_1_Status'];
 
               if($brother["Event_{$i}_Status"] == "Present") {
-                $buttonClass = "btn btn-success dropdown-toggle";
+                $buttonClass = "btn btn-success btn-sm dropdown-toggle";
               }
               else if($brother["Event_{$i}_Status"] == "Excused") {
-                $buttonClass = "btn btn-secondary dropdown-toggle";
+                $buttonClass = "btn btn-secondary btn-sm dropdown-toggle";
               }
               else {
-                $buttonClass = "btn btn-danger dropdown-toggle";
+                $buttonClass = "btn btn-danger btn-sm dropdown-toggle";
               }
             ?>
 
