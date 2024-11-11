@@ -3,7 +3,7 @@
     <h1>Attendance</h1>
   </div>
   <div class = "col-auto">
-    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addModal" id="add-button">Add</button>
+    <button class="btn btn-success">Add</button>
     <button class="btn btn-info">Need help?</button>
   </div>
 </div>
@@ -12,13 +12,13 @@
   <table class="table">
     <thead>
       <tr>
-        <th style="width: 70px; word-wrap: break-word; white-space: normal;">Name</th>
-        <th style="width: 80px;">Total</th>
-        <th style="width: 80px;"></th>
+        <th style="width: 60px; word-wrap: break-word; white-space: normal;">Name</th>
+        <th style="width: 50px;">Total</th>
+        <th style="width: 50px;"></th>
         <?php
           while($event = $events->fetch_assoc()) {
             $formattedDate = date("m-d", strtotime($event['EventDate'])); ?>
-            <th style="width: 95px; word-wrap: break-word; white-space: normal;"><?php echo $formattedDate; ?> <?php echo $event['EventName']; ?></th>
+            <th style="width: 100px; word-wrap: break-word; white-space: normal;"><?php echo $formattedDate; ?> <?php echo $event['EventName']; ?></th>
         <?php } ?>
       </tr>
     </thead>
@@ -37,7 +37,7 @@
                 <?php }
               ?>
             </td>
-            <td><button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#addModal" id="add-button">Edit</button></td>
+            <td><button class="btn btn-warning">Edit</button></td>
             <?php
               for ($i = 1; $i <= 10; $i++) {
                 $eventStatus = $brother['Event_1_Status'];
@@ -55,7 +55,7 @@
 
             <td>
               <div class="dropdown">
-                <button class="<?php echo $buttonClass;?>" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 95px;">
+                <button class="<?php echo $buttonClass;?>" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100px;">
                   <?php echo $brother["Event_{$i}_Status"];?>
                 </button>
                 <ul class="dropdown-menu">
