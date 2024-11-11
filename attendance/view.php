@@ -12,6 +12,7 @@
     <thead>
       <tr>
         <th>Name</th>
+        <td></td>
         <?php
           while($event = $events->fetch_assoc()) {
             $formattedDate = date("m-d", strtotime($event['EventDate'])); ?>
@@ -24,6 +25,7 @@
         while($brother = $attendance->fetch_assoc()) { ?>
           <tr>
             <td><?php echo $brother['FirstName'];?> <?php echo $brother['LastName'];?></td>
+            <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#addModal" id="add-button">Edit</button></td>
             <?php
               for ($i = 1; $i <= 10; $i++) {
                 $eventStatus = $brother['Event_1_Status'];
@@ -32,7 +34,7 @@
                 $buttonClass = "btn btn-success dropdown-toggle";
               }
               else if($brother["Event_{$i}_Status"] == "Excused") {
-                $buttonClass = "btn btn-warning dropdown-toggle";
+                $buttonClass = "btn btn-secondary dropdown-toggle";
               }
               else {
                 $buttonClass = "btn btn-danger dropdown-toggle";
