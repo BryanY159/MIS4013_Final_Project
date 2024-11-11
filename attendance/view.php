@@ -30,14 +30,14 @@
             <td>
               <?php
                 if($brother['Unexcused_Absences'] > 4) { ?>
-                  <button class="btn btn-danger btn-sm"><?php echo $brother['Unexcused_Absences'];?></button>
+                  <button class="btn btn-danger btn-sm" style="width: 50px;"><?php echo $brother['Unexcused_Absences'];?></button>
                 <?php }
                 else { ?>
-                  <button class="btn btn-success btn-sm"><?php echo $brother['Unexcused_Absences'];?></button>
+                  <button class="btn btn-success btn-sm" style="width: 50px;"><?php echo $brother['Unexcused_Absences'];?></button>
                 <?php }
               ?>
             </td>
-            <td><button class="btn btn-warning">Edit</button></td>
+            <td><button class="btn btn-warning" style="width: 50px;">Edit</button></td>
             <?php
               for ($i = 1; $i <= 10; $i++) {
                 $eventStatus = $brother['Event_1_Status'];
