@@ -24,7 +24,7 @@
           <div class="mb-3">
             <label for="MC" class="form-label">Membership Class</label>
             <?php
-              $MembershipClasses = selectMembershipClassesForInput();
+              $MembershipClass = selectMembershipClassesForInput();
             ?>
             <select class="form-select" id="MC" name="MC">
               <?php while($MembershipClass = $MembershipClasses->fetch_assoc()) { ?>
