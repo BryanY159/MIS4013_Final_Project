@@ -24,13 +24,14 @@
         while($brother = $attendance->fetch_assoc()) { ?>
           <tr>
             <td><?php echo $brother['FirstName'];?> <?php echo $brother['LastName'];?></td>
-            <?php 
-              $eventStatus = $brother['Event_1_Status'];
+            <?php
+              for ($i = 1; $i <= 10; $i++) {
+                $eventStatus = $brother['Event_1_Status'];
 
-              if($eventStatus == "Present") {
+              if($brother["Event_{$i}_Status"] == "Present") {
                 $buttonClass = "btn btn-success dropdown-toggle";
               }
-              else if($eventStatus == "Excused") {
+              else if($brother["Event_{$i}_Status"] == "Excused") {
                 $buttonClass = "btn btn-warning dropdown-toggle";
               }
               else {
@@ -41,7 +42,7 @@
             <td>
               <div class="dropdown">
                 <button class="<?php echo $buttonClass;?>" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <?php echo $eventStatus;?>
+                  <?php echo $brother["Event_{$i}_Status"];?>
                 </button>
                 <ul class="dropdown-menu">
                   <li><button class="dropdown-item" type="button">Present</button></li>
@@ -50,16 +51,7 @@
                 </ul>
               </div>
             </td>
-            
-            <td><?php echo $brother['Event_2_Status'];?></td>
-            <td><?php echo $brother['Event_3_Status'];?></td>
-            <td><?php echo $brother['Event_4_Status'];?></td>
-            <td><?php echo $brother['Event_5_Status'];?></td>
-            <td><?php echo $brother['Event_6_Status'];?></td>
-            <td><?php echo $brother['Event_7_Status'];?></td>
-            <td><?php echo $brother['Event_8_Status'];?></td>
-            <td><?php echo $brother['Event_9_Status'];?></td>
-            <td><?php echo $brother['Event_10_Status'];?></td>
+            <?php } ?>
           </tr>
         <?php } ?>
     </tbody>
