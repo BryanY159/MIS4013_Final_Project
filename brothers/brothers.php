@@ -7,7 +7,6 @@ $homeClass = "nav-link";
 $brothersClass = "nav-link active dropdown-toggle";
 $pointsClass = "nav-link";
 $attendanceClass = "nav-link";
-$demographicsClass = "nav-link";
 
 include "../universal/view-header.php";
 
