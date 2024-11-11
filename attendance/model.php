@@ -16,7 +16,8 @@ function selectAttendance() {
               MAX(CASE WHEN EventID = 7 THEN AttendanceStatus END) AS Event_7_Status,
               MAX(CASE WHEN EventID = 8 THEN AttendanceStatus END) AS Event_8_Status,
               MAX(CASE WHEN EventID = 9 THEN AttendanceStatus END) AS Event_9_Status,
-              MAX(CASE WHEN EventID = 10 THEN AttendanceStatus END) AS Event_10_Status
+              MAX(CASE WHEN EventID = 10 THEN AttendanceStatus END) AS Event_10_Status,
+              SUM(CASE WHEN A.AttendanceStatus = 'Unexcused' THEN 1 ELSE 0 END) AS Unexcused_Absences
           FROM 
               Attendance A
           JOIN 
