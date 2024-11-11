@@ -41,7 +41,7 @@
 
             <td>
               <div class="dropdown">
-                <button class="<?php echo $buttonClass;?>" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100px;">
+                <button class="<?php echo $buttonClass;?>" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 110px;">
                   <?php echo $brother["Event_{$i}_Status"];?>
                 </button>
                 <ul class="dropdown-menu">
