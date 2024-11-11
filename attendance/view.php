@@ -13,7 +13,7 @@
     <thead>
       <tr>
         <th>Name</th>
-        <td></td>
+        <td> </td>
         <?php
           while($event = $events->fetch_assoc()) {
             $formattedDate = date("m-d", strtotime($event['EventDate'])); ?>
