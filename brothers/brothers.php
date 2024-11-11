@@ -26,6 +26,13 @@ if (isset($_POST['actionType'])) {
         echo '<div class="alert alert-danger" role="alert"> Error: Brother Not Added </div>';
       }
       break;
+    case "Delete":
+      if (deleteBrother($_POST['BID'])) {
+        echo '<div class="alert alert-success" role="alert"> Brother Removed Successfully </div>';
+      } else {
+        echo '<div class="alert alert-danger" role="alert"> Error: Brother Not Removed </div>';
+      }
+      break;
   }
 }
 
