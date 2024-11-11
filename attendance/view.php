@@ -26,7 +26,7 @@
             <td><?php echo $brother['FirstName'];?> <?php echo $brother['LastName'];?></td>
             <?php 
                   $eventStatus = $brother['Event_1_Status'];
-                  php include "buttons/dropdown-buttons.php";                                       
+                  include "buttons/dropdown-buttons.php";                                       
             ?>  
             <td><?php echo $brother['Event_2_Status'];?></td>
             <td><?php echo $brother['Event_3_Status'];?></td>
