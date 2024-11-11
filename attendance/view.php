@@ -13,6 +13,7 @@
     <thead>
       <tr>
         <th>Name</th>
+        <th>Total</th>
         <th></th>
         <?php
           while($event = $events->fetch_assoc()) {
@@ -27,6 +28,16 @@
           <tr>
             <td><?php echo $brother['FirstName'];?> <?php echo $brother['LastName'];?></td>
             <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#addModal" id="add-button">Edit</button></td>
+            <td>
+              <?php
+                if($brother['Unexcused_Absences'] > 4) { ?>
+                  <button class="btn btn-danger"><?php echo $brother['Unexcused_Absences'];?></button>
+                <?php }
+                else { ?>
+                  <button class="btn btn-success"><?php echo $brother['Unexcused_Absences'];?></button>
+                <?php }
+              ?>
+            </td>
             <?php
               for ($i = 1; $i <= 10; $i++) {
                 $eventStatus = $brother['Event_1_Status'];
