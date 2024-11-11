@@ -21,6 +21,7 @@ if (isset($_POST['actionType'])) {
         echo '<div class="alert alert-danger" role="alert"> Error: Playlist Not Added </div>';
       }
       break;
+  }
 }
 
 $brothers = selectBrothers();
