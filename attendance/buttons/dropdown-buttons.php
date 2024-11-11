@@ -1,12 +1,13 @@
-if($eventStatus = "Present") {
-  $buttonClass = btn btn-success dropdown-toggle;
-}
-else if($eventStatus = "Excused") {
-  $buttonClass = btn btn-warning dropdown-toggle;
-}
-else {
-  $buttonClass = btn btn-danger dropdown-toggle;
-}
+<?php
+  if($eventStatus = "Present") {
+    $buttonClass = btn btn-success dropdown-toggle;
+  }
+  else if($eventStatus = "Excused") {
+    $buttonClass = btn btn-warning dropdown-toggle;
+  }
+  else {
+    $buttonClass = btn btn-danger dropdown-toggle;
+  }
 ?>
 
 <td>
@@ -21,5 +22,3 @@ else {
     </ul>
   </div>
 </td>
-
-<?php
