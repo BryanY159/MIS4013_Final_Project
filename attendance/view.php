@@ -12,13 +12,13 @@
   <table class="table">
     <thead>
       <tr>
-        <th style="width: 50px; word-wrap: break-word; white-space: normal;">Name</th>
-        <th style="width: 50px;">Total</th>
-        <th style="width: 50px;"></th>
+        <th style="width: 50px; text-align: center; word-wrap: break-word; white-space: normal;">Name</th>
+        <th style="width: 50px; text-align: center;">Total</th>
+        <th style="width: 50px; text-align: center;"></th>
         <?php
           while($event = $events->fetch_assoc()) {
             $formattedDate = date("m-d", strtotime($event['EventDate'])); ?>
-            <th style="width: 100px; word-wrap: break-word; white-space: normal;"><?php echo $formattedDate; ?> <?php echo $event['EventName']; ?></th>
+            <th style="width: 100px; text-align: center; word-wrap: break-word; white-space: normal;"><?php echo $formattedDate; ?> <?php echo $event['EventName']; ?></th>
         <?php } ?>
       </tr>
     </thead>
