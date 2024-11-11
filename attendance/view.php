@@ -25,9 +25,32 @@
           <tr>
             <td><?php echo $brother['FirstName'];?> <?php echo $brother['LastName'];?></td>
             <?php 
-                  $eventStatus = $brother['Event_1_Status'];
-                  include "buttons/dropdown-buttons.php";                                       
-            ?>  
+              $eventStatus = $brother['Event_1_Status'];
+
+              if($eventStatus == "Present") {
+                $buttonClass = "btn btn-success dropdown-toggle";
+              }
+              else if($eventStatus == "Excused") {
+                $buttonClass = "btn btn-warning dropdown-toggle";
+              }
+              else {
+                $buttonClass = "btn btn-danger dropdown-toggle";
+              }
+            ?>
+
+            <td>
+              <div class="dropdown">
+                <button class="<?php echo $buttonClass;?>" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <?php echo $eventStatus;?>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" type="button">Present</button></li>
+                  <li><button class="dropdown-item" type="button">Excused</button></li>
+                  <li><button class="dropdown-item" type="button">Unexcused</button></li>
+                </ul>
+              </div>
+            </td>
+            
             <td><?php echo $brother['Event_2_Status'];?></td>
             <td><?php echo $brother['Event_3_Status'];?></td>
             <td><?php echo $brother['Event_4_Status'];?></td>
