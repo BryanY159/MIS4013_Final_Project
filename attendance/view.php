@@ -3,6 +3,7 @@
     <h1>Attendance</h1>
   </div>
   <div class = "col-auto">
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addModal" id="add-button">Add</button>
     <button class="btn btn-info">Need help?</button>
   </div>
 </div>
@@ -43,7 +44,7 @@
 
             <td>
               <div class="dropdown">
-                <button class="<?php echo $buttonClass;?>" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 110px;">
+                <button class="<?php echo $buttonClass;?>" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 120px;">
                   <?php echo $brother["Event_{$i}_Status"];?>
                 </button>
                 <ul class="dropdown-menu">
