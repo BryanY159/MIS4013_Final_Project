@@ -51,7 +51,7 @@
                   }
                 ?>
             </td>
-            <td>Edit<?php # include "buttons/edit-button.php";?></td>
+            <td><?php include "buttons/edit-button.php";?></td>
             <td><?php include "buttons/delete-button.php";?></td>
           </tr>
         <?php } ?>
