@@ -24,7 +24,9 @@
             ?>
             <select class="form-select" id="SIDForID:<?php echo $brother['BrotherID'];?>" name="SID">
               <?php while($section = $sections->fetch_assoc()) { ?>
-                <option value="<?php echo $section['SectionID']; ?>"><?php echo $section['SectionName']; ?></option>
+                <option value="<?php echo $section['SectionID']; ?>" <?php if ($section['SectionID'] == $brother['SectionID']) echo 'selected'; ?>>
+                  <?php echo $section['SectionName']; ?>
+                </option>
               <?php } ?>
             </select>
           </div>
@@ -73,7 +75,7 @@
             </select>
           </div>
           <div class="mb-3">
-            <p class="form-text">Please change "-1" for the following point values if the brother goes conditional.</p>
+            <p class="form-text">Please change the point values to "-1" if the brother goes conditional.</p>
           </div>
           <div class="mb-3">
             <label for="SPForID:<?php echo $brother['BrotherID'];?>" class="form-label">Initial Service Points</label>
