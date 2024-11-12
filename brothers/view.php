@@ -27,7 +27,11 @@
     </thead>
     <tbody>
       <?php
-        while($brother = $brothers->fetch_assoc()) { ?>
+        while($brother = $brothers->fetch_assoc()) { 
+          $sections = selectSectionsForInput();
+          $membershipClasses = selectMembershipClassesForInput();
+          $statuses = selectStatusesForInput();  
+          ?>
           <tr>
             <td><?php echo $brother['FirstName'];?> <?php echo $brother['LastName'];?></td>
             <td><?php echo $brother['SectionName'];?></td>
@@ -51,12 +55,7 @@
                   }
                 ?>
             </td>
-            <td><?php 
-              $sections = selectSectionsForInput();
-              $membershipClasses = selectMembershipClassesForInput();
-              $statuses = selectStatusesForInput();                                   
-              include "buttons/edit-button.php";
-            ?></td>
+            <td><?php include "buttons/edit-button.php";?></td>
             <td><?php include "buttons/delete-button.php";?></td>
           </tr>
         <?php } ?>
