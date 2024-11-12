@@ -45,9 +45,6 @@ if (isset($_POST['actionType'])) {
 }
 
 $brothers = selectBrothers();
-$sections = selectSectionsForInput();
-$membershipClasses = selectMembershipClassesForInput();
-$statuses = selectStatusesForInput();
 
 include "view.php";
 include "../universal/view-footer.php";
