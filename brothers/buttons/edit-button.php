@@ -37,7 +37,8 @@
             ?>
             <select class="form-select" id="MC-IYForID:<?php echo $brother['BrotherID'];?>" name="MC-IY">
               <?php while($membershipClass = $membershipClasses->fetch_assoc()) { ?>
-                <option value="<?php echo $membershipClass['MembershipClass']; ?>|<?php echo $membershipClass['InitiationYear']; ?>">
+                <option value="<?php echo $membershipClass['MembershipClass']; ?>|<?php echo $membershipClass['InitiationYear']; ?>"
+                  <?php if ($membershipClass['MembershipClass'] == $brother['MembershipClass']) echo 'selected';?>>
                   <?php echo $membershipClass['MembershipClass']."-".$membershipClass['InitiationYear'];?>
                 </option>
               <?php } ?>
@@ -70,7 +71,9 @@
             ?>
             <select class="form-select" id="StatusForID:<?php echo $brother['BrotherID'];?>" name="Status">
               <?php while($status = $statuses->fetch_assoc()) { ?>
-                <option><?php echo $status['Status'];?></option>
+                <option <?php if ($status['Status'] == $brother['Status']) echo 'selected'; ?>>
+                  <?php echo $status['Status'];?>
+                </option>
               <?php } ?>
             </select>
           </div>
