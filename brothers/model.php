@@ -74,6 +74,22 @@ function addBrother($FN, $LN, $MC, $IY, $GY, $Major, $Major2, $Minor, $Minor2, $
     }
 }
 
+function editBrother($BID, $FN, $LN, $MC, $IY, $GY, $Major, $Major2, $Minor, $Minor2, $Status, $SID, $SP, $BP) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("UPDATE Brothers SET FirstName = ?, SET LastName = ?, SET MembershipClass = ?, SET InitiationYear = ?, SET GraduationYear = ?, 
+						SET Major = ?, SET Major2 = ?, SET Minor = ?, SET Minor2 = ?, SET Status = ?, SET SectionID = ?, 
+      						SET ServicePoints = ?, SET BrotherhoodPoints = ? WHERE BrotherID = ?");
+        $stmt->bind_param("sssiisssssiiii", $FN, $LN, $MC, $IY, $GY, $Major, $Major2, $Minor, $Minor2, $Status, $SID, $SP, $BP, $BID);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
 function deleteBrother($BID) {
     try {
         $conn = get_db_connection();
