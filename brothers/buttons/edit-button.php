@@ -20,7 +20,7 @@
           <div class="mb-3">
             <label for="SIDForID:<?php echo $brother['BrotherID'];?>" class="form-label">Section</label>
             <?php
-              $sections = selectSectionsForInput();
+              # $sections = selectSectionsForInput();
             ?>
             <select class="form-select" id="SIDForID:<?php echo $brother['BrotherID'];?>" name="SID">
               <?php while($section = $sections->fetch_assoc()) { ?>
@@ -33,7 +33,7 @@
           <div class="mb-3">
             <label for="MC-IYForID:<?php echo $brother['BrotherID'];?>" class="form-label">Membership Class-Initiation Year</label>
             <?php
-              $membershipClasses = selectMembershipClassesForInput();
+              # $membershipClasses = selectMembershipClassesForInput();
             ?>
             <select class="form-select" id="MC-IYForID:<?php echo $brother['BrotherID'];?>" name="MC-IY">
               <?php while($membershipClass = $membershipClasses->fetch_assoc()) { ?>
@@ -67,7 +67,7 @@
           <div class="mb-3">
             <label for="StatusForID:<?php echo $brother['BrotherID'];?>" class="form-label">Status</label>
             <?php
-              $statuses = selectStatusesForInput();
+              # $statuses = selectStatusesForInput();
             ?>
             <select class="form-select" id="StatusForID:<?php echo $brother['BrotherID'];?>" name="Status">
               <?php while($status = $statuses->fetch_assoc()) { ?>
