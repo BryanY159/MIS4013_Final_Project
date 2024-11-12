@@ -26,9 +26,9 @@ if (isset($_POST['actionType'])) {
     case "Edit":
       list($MC, $IY) = explode('|', $_POST['MC-IY']);
     
-      if (editBrother($_POST['FN'], $_POST['LN'], $MC, $IY, $_POST['GY'], 
+      if (editBrother($_POST['BID'], $_POST['FN'], $_POST['LN'], $MC, $IY, $_POST['GY'], 
                       $_POST['Major'], $_POST['Major2'], $_POST['Minor'], $_POST['Minor2'], 
-                      $_POST['Status'], $_POST['SID'], $_POST['SP'], $_POST['BP'], $_POST['BID'])) {
+                      $_POST['Status'], $_POST['SID'], $_POST['SP'], $_POST['BP'])) {
         echo '<div class="alert alert-success" role="alert"> Brother Edited Successfully </div>';
       } else {
         echo '<div class="alert alert-danger" role="alert"> Error: Brother Not Edited </div>';
