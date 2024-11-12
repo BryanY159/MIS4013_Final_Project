@@ -51,7 +51,12 @@
                   }
                 ?>
             </td>
-            <td><?php include "buttons/edit-button.php";?></td>
+            <td><?php 
+              $sections = selectSectionsForInput();
+              $membershipClasses = selectMembershipClassesForInput();
+              $statuses = selectStatusesForInput();                                   
+              include "buttons/edit-button.php";
+            ?></td>
             <td><?php include "buttons/delete-button.php";?></td>
           </tr>
         <?php } ?>
