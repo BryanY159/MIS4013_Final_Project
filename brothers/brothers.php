@@ -14,10 +14,18 @@ if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":
       list($MC, $IY) = explode('|', $_POST['MC-IY']);
+
+      $SP = $_POST['SP'];
+      $BP = $_POST['BP'];
+    
+      if($_POST['Status'] == "Conditional") {
+        $SP = -1;
+        $BP = -1;
+      }
     
       if (addBrother($_POST['FN'], $_POST['LN'], $MC, $IY, $_POST['GY'], 
                      $_POST['Major'], $_POST['Major2'], $_POST['Minor'], $_POST['Minor2'], 
-                     $_POST['Status'], $_POST['SID'], $_POST['SP'], $_POST['BP'])) {
+                     $_POST['Status'], $_POST['SID'], $SP, $BP)) {
         echo '<div class="alert alert-success" role="alert"> Brother Added Successfully </div>';
       } else {
         echo '<div class="alert alert-danger" role="alert"> Error: Brother Not Added </div>';
@@ -25,10 +33,18 @@ if (isset($_POST['actionType'])) {
       break;
     case "Edit":
       list($MC, $IY) = explode('|', $_POST['MC-IY']);
+
+      $SP = $_POST['SP'];
+      $BP = $_POST['BP'];
     
+      if($_POST['Status'] == "Conditional") {
+        $SP = -1;
+        $BP = -1;
+      }
+      
       if (editBrother($_POST['BID'], $_POST['FN'], $_POST['LN'], $MC, $IY, $_POST['GY'], 
                       $_POST['Major'], $_POST['Major2'], $_POST['Minor'], $_POST['Minor2'], 
-                      $_POST['Status'], $_POST['SID'], $_POST['SP'], $_POST['BP'])) {
+                      $_POST['Status'], $_POST['SID'], $SP, $BP)) {
         echo '<div class="alert alert-success" role="alert"> Brother Edited Successfully </div>';
       } else {
         echo '<div class="alert alert-danger" role="alert"> Error: Brother Not Edited </div>';
