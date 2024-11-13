@@ -73,14 +73,14 @@
             </select>
           </div>
           <div class="mb-3">
-            <p class="form-text">Please change the point values to "-1" if the brother goes conditional.</p>
+            <p class="form-text">Please change the point values to "-1" if the brother goes conditional. You can also edit this on the Points page.</p>
           </div>
           <div class="mb-3">
-            <label for="SPForID:<?php echo $brother['BrotherID'];?>" class="form-label">Initial Service Points</label>
+            <label for="SPForID:<?php echo $brother['BrotherID'];?>" class="form-label">Current Service Points</label>
             <input type="text" class="form-control" id="SPForID:<?php echo $brother['BrotherID'];?>" name="SP" value="<?php echo $brother['ServicePoints'];?>">
           </div>
           <div class="mb-3">
-            <label for="BPForID:<?php echo $brother['BrotherID'];?>" class="form-label">Initial Brotherhood Points</label>
+            <label for="BPForID:<?php echo $brother['BrotherID'];?>" class="form-label">Current Brotherhood Points</label>
             <input type="text" class="form-control" id="BPForID:<?php echo $brother['BrotherID'];?>" name="BP" value="<?php echo $brother['BrotherhoodPoints'];?>">
           </div>
           <input type="hidden" name="BID" value="<?php echo $brother['BrotherID']; ?>">
