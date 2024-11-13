@@ -84,7 +84,7 @@
                 <input type="text" class="form-control" id="BP" name="BP">
               </div>
               <div class="mb-3">
-                <p class="form-text">Please enter "-1" for the above point values if the brother is conditional.</p>
+                <p class="form-text">Conditionals will automatically have -1 points</p>
               </div>
             </div>
           </div>
