@@ -30,7 +30,7 @@
                 </select>
               </div>
               <div class="mb-3">
-                <label for="MC-IY" class="form-label">Mem. Class-Initiation Year</label>
+                <label for="MC-IY" class="form-label">MC Class-Initiation Year</label>
                 <?php $membershipClasses = selectMembershipClassesForInput(); ?>
                 <select class="form-select" id="MC-IY" name="MC-IY">
                   <?php while($membershipClass = $membershipClasses->fetch_assoc()) { ?>
