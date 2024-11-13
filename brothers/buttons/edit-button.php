@@ -19,15 +19,21 @@
           </div>
           <div class="mb-3">
             <label for="SIDForID:<?php echo $brother['BrotherID'];?>" class="form-label">Section</label>
-            <?php
-              $sections = selectSectionsForInput();
-            ?>
             <select class="form-select" id="SIDForID:<?php echo $brother['BrotherID'];?>" name="SID">
-              <?php while($section = $sections->fetch_assoc()) { ?>
-                <option value="<?php echo $section['SectionID']; ?>" <?php if ($section['SectionID'] == $brother['SectionID']) echo 'selected'; ?>>
-                  <?php echo $section['SectionName']; ?>
-                </option>
-              <?php } ?>
+              <option value="1" <?php if (1 == $brother['SectionID']) echo 'selected'; ?>>Flute</option>
+              <option value="2" <?php if (2 == $brother['SectionID']) echo 'selected'; ?>>Clarinet</option>
+              <option value="3" <?php if (3 == $brother['SectionID']) echo 'selected'; ?>>Saxophone</option>
+              <option value="4" <?php if (4 == $brother['SectionID']) echo 'selected'; ?>>Trumpet</option>
+              <option value="5" <?php if (5 == $brother['SectionID']) echo 'selected'; ?>>Mellophone</option>
+              <option value="6" <?php if (6 == $brother['SectionID']) echo 'selected'; ?>>Trombone</option>
+              <option value="7" <?php if (7 == $brother['SectionID']) echo 'selected'; ?>>Baritone</option>
+              <option value="8" <?php if (8 == $brother['SectionID']) echo 'selected'; ?>>Sousaphone</option>
+              <option value="9" <?php if (9 == $brother['SectionID']) echo 'selected'; ?>>Snare</option>
+              <option value="10" <?php if (10 == $brother['SectionID']) echo 'selected'; ?>>Bass Drum</option>
+              <option value="11" <?php if (11 == $brother['SectionID']) echo 'selected'; ?>>Cymbals</option>
+              <option value="12" <?php if (12 == $brother['SectionID']) echo 'selected'; ?>>Tenors</option>
+              <option value="13" <?php if (13 == $brother['SectionID']) echo 'selected'; ?>>Pit</option>
+              <option value="14" <?php if (14 == $brother['SectionID']) echo 'selected'; ?>>Guard</option>
             </select>
           </div>
           <div class="mb-3">
