@@ -40,7 +40,7 @@
                 </select>
               </div>
               <div class="mb-3">
-                <label for="MC-IYForID:<?php echo $brother['BrotherID'];?>" class="form-label">Membership Class-Initiation Year</label>
+                <label for="MC-IYForID:<?php echo $brother['BrotherID'];?>" class="form-label">Mem. Class-Initiation Year</label>
                 <select class="form-select" id="MC-IYForID:<?php echo $brother['BrotherID'];?>" name="MC-IY">
                   <option value="Zeta Mu|2021"<?php if ("Zeta Mu" == $brother['MembershipClass']) echo 'selected';?>>Zeta Mu-2021</option>
                   <option value="Zeta Nu|2022"<?php if ("Zeta Nu" == $brother['MembershipClass']) echo 'selected';?>>Zeta Nu-2022</option>
