@@ -87,9 +87,6 @@
                 <label for="BPForID:<?php echo $brother['BrotherID'];?>" class="form-label">Current Brotherhood Points</label>
                 <input type="text" class="form-control" id="BPForID:<?php echo $brother['BrotherID'];?>" name="BP" value="<?php echo $brother['BrotherhoodPoints'];?>">
               </div>
-              <div class="mb-3">
-                <p class="form-text">Conditionals will automatically have -1 points</p>
-              </div>
             </div>
           </div>
           <input type="hidden" name="BID" value="<?php echo $brother['BrotherID']; ?>">
