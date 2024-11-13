@@ -88,7 +88,7 @@
                 <input type="text" class="form-control" id="BPForID:<?php echo $brother['BrotherID'];?>" name="BP" value="<?php echo $brother['BrotherhoodPoints'];?>">
               </div>
               <div class="mb-3">
-                <p class="form-text">Please change the above point values to "-1" if the brother goes conditional. You can also edit this on the Points page.</p>
+                <p class="form-text">Conditionals will automatically have -1 points</p>
               </div>
             </div>
           </div>
