@@ -38,16 +38,11 @@
           </div>
           <div class="mb-3">
             <label for="MC-IYForID:<?php echo $brother['BrotherID'];?>" class="form-label">Membership Class-Initiation Year</label>
-            <?php
-              $membershipClasses = selectMembershipClassesForInput();
-            ?>
             <select class="form-select" id="MC-IYForID:<?php echo $brother['BrotherID'];?>" name="MC-IY">
-              <?php while($membershipClass = $membershipClasses->fetch_assoc()) { ?>
-                <option value="<?php echo $membershipClass['MembershipClass']; ?>|<?php echo $membershipClass['InitiationYear']; ?>"
-                  <?php if ($membershipClass['MembershipClass'] == $brother['MembershipClass']) echo 'selected';?>>
-                  <?php echo $membershipClass['MembershipClass']."-".$membershipClass['InitiationYear'];?>
-                </option>
-              <?php } ?>
+              <option value="Zeta Mu-2021"<?php if ("Zeta Mu" == $brother['MembershipClass']) echo 'selected';?>>Zeta Mu-2021</option>
+              <option value="Zeta Nu-2022"<?php if ("Zeta Nu" == $brother['MembershipClass']) echo 'selected';?>>Zeta Nu-2022</option>
+              <option value="Zeta Xi-2023"<?php if ("Zeta Xi" == $brother['MembershipClass']) echo 'selected';?>>Zeta Xi-2023</option>
+              <option value="Zeta Omicron-2024"<?php if ("Zeta Omicron" == $brother['MembershipClass']) echo 'selected';?>>Zeta Omicron-2024</option>
             </select>
           </div>
           <div class="mb-3">
@@ -72,15 +67,9 @@
           </div>
           <div class="mb-3">
             <label for="StatusForID:<?php echo $brother['BrotherID'];?>" class="form-label">Status</label>
-            <?php
-              $statuses = selectStatusesForInput();
-            ?>
             <select class="form-select" id="StatusForID:<?php echo $brother['BrotherID'];?>" name="Status">
-              <?php while($status = $statuses->fetch_assoc()) { ?>
-                <option <?php if ($status['Status'] == $brother['Status']) echo 'selected'; ?>>
-                  <?php echo $status['Status'];?>
-                </option>
-              <?php } ?>
+              <option <?php if ("Active" == $brother['Status']) echo 'selected'; ?>>Active</option>
+              <option <?php if ("Conditional" == $brother['Status']) echo 'selected'; ?>>Conditional</option>
             </select>
           </div>
           <div class="mb-3">
