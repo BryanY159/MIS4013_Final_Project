@@ -52,7 +52,6 @@
                 <label for="GYForID:<?php echo $brother['BrotherID'];?>" class="form-label">Graduation Year</label>
                 <input type="text" class="form-control" id="GYForID:<?php echo $brother['BrotherID'];?>" name="GY" value="<?php echo $brother['GraduationYear'];?>">
               </div>
-            <div class="col-md-6">
               <div class="mb-3">
                 <label for="MajorForID:<?php echo $brother['BrotherID'];?>" class="form-label">Major (required)</label>
                 <input type="text" class="form-control" id="MajorForID:<?php echo $brother['BrotherID'];?>" name="Major" value="<?php echo $brother['Major'];?>">
@@ -64,6 +63,7 @@
             </div>
             
             <!-- Right Column -->
+            <div class="col-md-6">
               <div class="mb-3">
                 <label for="MinorForID:<?php echo $brother['BrotherID'];?>" class="form-label">Minor (optional)</label>
                 <input type="text" class="form-control" id="MinorForID:<?php echo $brother['BrotherID'];?>" name="Minor" value="<?php echo $brother['Minor'];?>">
