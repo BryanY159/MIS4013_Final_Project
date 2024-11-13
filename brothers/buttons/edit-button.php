@@ -56,14 +56,14 @@
                 <label for="MajorForID:<?php echo $brother['BrotherID'];?>" class="form-label">Major (required)</label>
                 <input type="text" class="form-control" id="MajorForID:<?php echo $brother['BrotherID'];?>" name="Major" value="<?php echo $brother['Major'];?>">
               </div>
-              <div class="mb-3">
-                <label for="Major2ForID:<?php echo $brother['BrotherID'];?>" class="form-label">2nd Major (optional)</label>
-                <input type="text" class="form-control" id="Major2ForID:<?php echo $brother['BrotherID'];?>" name="Major2" value="<?php echo $brother['Major2'];?>">
-              </div>
             </div>
             
             <!-- Right Column -->
             <div class="col-md-6">
+              <div class="mb-3">
+                <label for="Major2ForID:<?php echo $brother['BrotherID'];?>" class="form-label">2nd Major (optional)</label>
+                <input type="text" class="form-control" id="Major2ForID:<?php echo $brother['BrotherID'];?>" name="Major2" value="<?php echo $brother['Major2'];?>">
+              </div>
               <div class="mb-3">
                 <label for="MinorForID:<?php echo $brother['BrotherID'];?>" class="form-label">Minor (optional)</label>
                 <input type="text" class="form-control" id="MinorForID:<?php echo $brother['BrotherID'];?>" name="Minor" value="<?php echo $brother['Minor'];?>">
@@ -80,15 +80,15 @@
                 </select>
               </div>
               <div class="mb-3">
-                <p class="form-text">Please change the point values to "-1" if the brother goes conditional. You can also edit this on the Points page.</p>
-              </div>
-              <div class="mb-3">
                 <label for="SPForID:<?php echo $brother['BrotherID'];?>" class="form-label">Current Service Points</label>
                 <input type="text" class="form-control" id="SPForID:<?php echo $brother['BrotherID'];?>" name="SP" value="<?php echo $brother['ServicePoints'];?>">
               </div>
               <div class="mb-3">
                 <label for="BPForID:<?php echo $brother['BrotherID'];?>" class="form-label">Current Brotherhood Points</label>
                 <input type="text" class="form-control" id="BPForID:<?php echo $brother['BrotherID'];?>" name="BP" value="<?php echo $brother['BrotherhoodPoints'];?>">
+              </div>
+              <div class="mb-3">
+                <p class="form-text">Please change the above point values to "-1" if the brother goes conditional. You can also edit this on the Points page.</p>
               </div>
             </div>
           </div>
