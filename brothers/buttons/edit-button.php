@@ -39,10 +39,10 @@
           <div class="mb-3">
             <label for="MC-IYForID:<?php echo $brother['BrotherID'];?>" class="form-label">Membership Class-Initiation Year</label>
             <select class="form-select" id="MC-IYForID:<?php echo $brother['BrotherID'];?>" name="MC-IY">
-              <option value="Zeta Mu-2021"<?php if ("Zeta Mu" == $brother['MembershipClass']) echo 'selected';?>>Zeta Mu-2021</option>
-              <option value="Zeta Nu-2022"<?php if ("Zeta Nu" == $brother['MembershipClass']) echo 'selected';?>>Zeta Nu-2022</option>
-              <option value="Zeta Xi-2023"<?php if ("Zeta Xi" == $brother['MembershipClass']) echo 'selected';?>>Zeta Xi-2023</option>
-              <option value="Zeta Omicron-2024"<?php if ("Zeta Omicron" == $brother['MembershipClass']) echo 'selected';?>>Zeta Omicron-2024</option>
+              <option value="Zeta Mu|2021"<?php if ("Zeta Mu" == $brother['MembershipClass']) echo 'selected';?>>Zeta Mu-2021</option>
+              <option value="Zeta Nu|2022"<?php if ("Zeta Nu" == $brother['MembershipClass']) echo 'selected';?>>Zeta Nu-2022</option>
+              <option value="Zeta Xi|2023"<?php if ("Zeta Xi" == $brother['MembershipClass']) echo 'selected';?>>Zeta Xi-2023</option>
+              <option value="Zeta Omicron|2024"<?php if ("Zeta Omicron" == $brother['MembershipClass']) echo 'selected';?>>Zeta Omicron-2024</option>
             </select>
           </div>
           <div class="mb-3">
