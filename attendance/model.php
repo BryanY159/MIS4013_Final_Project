@@ -24,7 +24,7 @@ function selectAttendance() {
           JOIN 
               Brothers B ON A.BrotherID = B.BrotherID
           GROUP BY 
-              FirstName, LastName
+              A.BrotherID, FirstName, LastName
           ORDER BY
               FirstName, LastName;
         ");
