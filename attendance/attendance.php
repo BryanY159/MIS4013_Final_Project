@@ -21,16 +21,14 @@ if (isset($_POST['actionType'])) {
       break;
   }
 }
-
-$events = selectEvents();
-
 if(isset($_POST['rowBID'])) {
   $attendance = selectBrother($_POST['rowBID']);
 }
 else {
   $attendance = selectAttendance();
 }
-include "view-full-roster.php";
+$events = selectEvents();
 
+include "view.php";
 include "../universal/view-footer.php";
 ?>
