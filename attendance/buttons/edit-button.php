@@ -11,8 +11,7 @@
         <form method="post" action="">
           <div class="row">
             <!-- Left Column -->
-            <?php
-            for ($i = 1; $i <= 5; $i++) {
+            <?php for ($i = 1; $i <= 5; $i++) { ?>
               <div class="mb-3">
                 <label for="Event<?php echo $i];?>forID:<?php echo $brother['BrotherID'];?>" class="form-label">
                   $formattedDate = date("m-d", strtotime($event['EventDate']));?>
@@ -24,12 +23,11 @@
                   <option value="Unexcused" <?php if ("Unexcused" == $brother["Event_{$i}_Status") echo 'selected'; ?>>Unexcused</option>
                 </select>
               </div>
-            ?>
+            <?php } ?>
             </div>
             
             <!-- Right Column -->
-            <?php
-            for ($i = 6; $i <= 10; $i++) {
+            <?php for ($i = 6; $i <= 10; $i++) { ?>
               <div class="mb-3">
                 <label for="Event<?php echo $i];?>forID:<?php echo $brother['BrotherID'];?>" class="form-label">
                   $formattedDate = date("m-d", strtotime($event['EventDate']));?>
@@ -41,7 +39,7 @@
                   <option value="Unexcused" <?php if ("Unexcused" == $brother["Event_{$i}_Status") echo 'selected'; ?>>Unexcused</option>
                 </select>
               </div>
-            ?>
+            <?php } ?>
             </div>
             
           <input type="hidden" name="BID" value="<?php echo $brother['BrotherID']; ?>">
