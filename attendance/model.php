@@ -67,16 +67,23 @@ function selectBrother($BID) {
               A.BrotherID, FirstName, LastName
           ORDER BY
               FirstName, LastName
-        ");
+        ");      
         $stmt->bind_param("i", $BID);
-        $success = $stmt->execute();
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $data = $result->fetch_assoc();
+        $stmt->close();
         $conn->close();
-        return $success;
+        return $data;
+
     } catch (Exception $e) {
-        $conn->close();
-        throw $e;
+        if (isset($conn)) {
+            $conn->close();
+        }
+        throw $e; // Rethrow exception for handling elsewhere
     }
 }
+
 
 function selectEvents() {
     try {
