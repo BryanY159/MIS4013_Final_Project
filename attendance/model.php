@@ -51,4 +51,18 @@ function selectEvents() {
     }
 }
 
+function editAttendance2($BID, $EID, $Status) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("UPDATE Attendance SET AttendanceStatus = ? WHERE BrotherID = ? AND EventID = ?");
+        $stmt->bind_param("sii", $Status, $BID, $EID);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
 ?>
