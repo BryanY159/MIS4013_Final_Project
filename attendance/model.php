@@ -71,10 +71,8 @@ function selectBrother($BID) {
         $stmt->bind_param("i", $BID);
         $stmt->execute();
         $result = $stmt->get_result();
-        $data = $result->fetch_assoc();
-        $stmt->close();
         $conn->close();
-        return $data;
+        return $result;
 
     } catch (Exception $e) {
         if (isset($conn)) {
