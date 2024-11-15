@@ -42,8 +42,8 @@
             <td>
               <?php if (isset($_POST['rowBID'])) { ?>
                 <button type="submit" onclick="location.href='attendance.php'" class="btn btn-danger btn-sm">Back</button>
-              <?php } ?>
-              <?php else { ?>
+              <?php } 
+              else { ?>
                 <form method="post" action="attendance.php">
                   <input type="hidden" name="rowBID" value="<?php echo $brother['BrotherID']; ?>">
                   <button type="submit" class="btn btn-warning btn-sm">Edit</button>
