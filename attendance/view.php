@@ -37,7 +37,7 @@
                 <?php }
               ?>
             </td>
-            <td><button class="btn btn-warning btn-sm" style="width: 45px;">Edit</button></td>
+            <td><?php include "buttons/edit-button.php"; ?></td>
             <?php include "buttons/dropdown-button.php"; ?>
           </tr>
         <?php } ?>
