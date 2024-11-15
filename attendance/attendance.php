@@ -22,7 +22,7 @@ if (isset($_POST['actionType'])) {
   }
 }
 
-if(isset($_POST['rowBID']) {
+if(isset($_POST['rowBID'])) {
   $attendance = selectBrother($_POST['rowBID']);
 }
 else {
