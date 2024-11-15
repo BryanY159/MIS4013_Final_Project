@@ -39,7 +39,7 @@
             </td>
             <td>
               <form method="post" action="attendance.php">
-                <input type="hidden" name="BID" value="<?php echo $brother['BrotherID']; ?>">
+                <input type="hidden" name="rowBID" value="<?php echo $brother['BrotherID']; ?>">
                 <button type="submit" class="btn btn-warning">Edit</button>
               </form>
             </td>
