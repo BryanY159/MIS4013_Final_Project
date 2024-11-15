@@ -37,7 +37,12 @@
                 <?php }
               ?>
             </td>
-            <td><?php include "buttons/edit-button.php"; ?></td>
+            <td>
+              <form method="post" action="attendance.php">
+                <input type="hidden" name="BID" value="<?php echo $brother['BrotherID']; ?>">
+                <button type="submit" class="btn btn-warning">Edit</button>
+              </form>
+            </td>
             <?php include "buttons/dropdown-button.php"; ?>
           </tr>
         <?php } ?>
