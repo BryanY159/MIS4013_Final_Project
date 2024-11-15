@@ -30,7 +30,7 @@
               ?>
             </td>
             <td>
-              <button type="submit" onclick="location.href='attendance.php'" class="btn btn-warning btn-sm">Back</button>
+              <button type="submit" onclick="location.href='attendance.php'" class="btn btn-danger btn-sm">Back</button>
             </td>
             <?php include "buttons/dropdown-button.php"; ?>
           </tr>
