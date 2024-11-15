@@ -13,7 +13,7 @@ include "../universal/view-header.php";
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Edit2":     
-      if (editAttendance2($_POST['BID'], $_POST['EID'], $_POST['Status'])) {
+      if (editAttendance($_POST['BID'], $_POST['EID'], $_POST['Status'])) {
         echo '<div class="alert alert-success" role="alert"> Attendance Edited Successfully </div>';
       } else {
         echo '<div class="alert alert-danger" role="alert"> Error: Attendance Not Edited </div>';
@@ -22,7 +22,12 @@ if (isset($_POST['actionType'])) {
   }
 }
 
-$attendance = selectAttendance();
+if(isset($_POST['rowBID']) {
+  $attendance = selectBrother($_POST['rowBID']);
+}
+else {
+  $attendance = selectAttendance();
+}
 $events = selectEvents();
 
 include "view.php";
