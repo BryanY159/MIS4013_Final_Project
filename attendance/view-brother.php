@@ -1,6 +1,6 @@
 <h1>Attendance</h1>
     
-<div class="table-responsive" style="max-height: 80vh; overflow-y: auto;">
+<div class="table-responsive">
   <table class="table">
     <thead>
       <tr>
