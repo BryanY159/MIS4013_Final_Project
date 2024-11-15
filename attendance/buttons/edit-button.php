@@ -13,7 +13,7 @@
             <!-- Left Column -->
             <?php for ($i = 1; $i <= 5; $i++) { ?>
               <div class="mb-3">
-                <label for="Event<?php echo $i];?>forID:<?php echo $brother['BrotherID'];?>" class="form-label">
+                <label for="Event<?php echo $i;?>forID:<?php echo $brother['BrotherID'];?>" class="form-label">
                   $formattedDate = date("m-d", strtotime($event['EventDate']));?>
                   <?php echo $formattedDate; ?> <?php echo $event['EventName'];?>
                 </label>
@@ -29,7 +29,7 @@
             <!-- Right Column -->
             <?php for ($i = 6; $i <= 10; $i++) { ?>
               <div class="mb-3">
-                <label for="Event<?php echo $i];?>forID:<?php echo $brother['BrotherID'];?>" class="form-label">
+                <label for="Event<?php echo $i;?>forID:<?php echo $brother['BrotherID'];?>" class="form-label">
                   <?php $formattedDate = date("m-d", strtotime($event['EventDate']));
                   echo $formattedDate; ?> <?php echo $event['EventName'];?>
                 </label>
