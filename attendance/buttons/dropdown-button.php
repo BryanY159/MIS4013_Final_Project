@@ -19,6 +19,9 @@ for ($i = 1; $i <= 10; $i++) {
     <ul class="dropdown-menu">
       <li>
         <form method="POST" action="">
+          <?php if(isset($_POST['rowBID'])) { ?>
+          <input type="hidden" name="rowBID" value="<?php echo $brother['BrotherID']; ?>">
+          <?php } ?>
           <input type="hidden" name="BID" value="<?php echo $brother['BrotherID']; ?>">
           <input type="hidden" name="EID" value="<?php echo $i; ?>">
           <input type="hidden" name="Status" value="Present">
