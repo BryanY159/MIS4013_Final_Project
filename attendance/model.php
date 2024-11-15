@@ -5,6 +5,7 @@ function selectAttendance() {
         $conn = get_db_connection();
         $stmt = $conn->prepare("
         SELECT 
+              A.BrotherID,
               FirstName,
               LastName,
               MAX(CASE WHEN EventID = 1 THEN AttendanceStatus END) AS Event_1_Status,
