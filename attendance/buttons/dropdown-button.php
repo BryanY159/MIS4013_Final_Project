@@ -12,11 +12,11 @@ for ($i = 1; $i <= 10; $i++) {
 ?>
 
 <td>
-  <div class="dropdown">
+  <div class="dropdown" style="position: static;">
     <button class="<?php echo $buttonClass;?>" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100px;">
       <?php echo $brother["Event_{$i}_Status"];?>
     </button>
-    <ul class="dropdown-menu">
+    <ul class="dropdown-menu" style="position: absolute; z-index: 1050; max-height: 300px; overflow-y: auto;">
       <li>
         <form method="POST" action="">
           <?php if(isset($_POST['rowBID'])) { ?>
