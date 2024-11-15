@@ -31,9 +31,9 @@
             <div class="col-md-6">
               <?php for ($i = 6; $i <= 10; $i++) { ?>
                 <div class="mb-3">
+                    <?php $formattedDate = date("m-d", strtotime($event['EventDate']));?>
                   <label for="Event<?php echo $i;?>forID:<?php echo $brother['BrotherID'];?>" class="form-label">
-                    <?php $formattedDate = date("m-d", strtotime($event['EventDate']));
-                    echo $formattedDate; ?> <?php echo $event['EventName'];?>
+                    <?php echo $formattedDate; ?> <?php echo $event['EventName'];?>
                   </label>
                   <select class="form-select" id="Event<?php echo $i;?>forID:<?php echo $brother['BrotherID'];?>" name="EID<?php echo $i;?>">
                     <option value="Present" <?php if ("Present" == $brother['Event_{$i}_Status']) echo 'selected'; ?>>Present</option>
