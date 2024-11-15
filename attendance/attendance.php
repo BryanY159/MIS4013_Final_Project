@@ -26,12 +26,11 @@ $events = selectEvents();
 
 if(isset($_POST['rowBID'])) {
   $attendance = selectBrother($_POST['rowBID']);
-  include "view-brother.php";
 }
 else {
   $attendance = selectAttendance();
-  include "view-full-roster.php";
 }
+include "view-full-roster.php";
 
 include "../universal/view-footer.php";
 ?>
