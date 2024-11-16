@@ -22,6 +22,7 @@ if (isset($_POST['actionType'])) {
     case "Edit":     
       if (editAttendance($_POST['BID'], $_POST['EID'], $_POST['Status'])) {
         $toastMessage = "Attendance Edited Successfully";
+        $toastType = "edit";
       } else {
         $toastMessage = "Error: Attendance Not Edited";
         $toastType = "error";
@@ -44,12 +45,25 @@ include "view.php";
 <script>
   const toastMessage = "<?php echo $toastMessage; ?>";
   const toastType = "<?php echo $toastType; ?>";
-  const actionType = "<?php echo $actionType; ?>";
 
-  if (toastMessage) {
-    let backgroundColor = actionType === "Delete" ? "red" :
-                          actionType === "Add" ? "green" : 
-                          actionType === "Edit" ? "yellow" : "blue";
+  let backgroundColor;
+  
+  switch (toastType) {
+   case "add":
+     backgroundColor = "green";
+     break;
+   case "edit":
+     backgroundColor = "yellow";
+     break;
+   case "delete":
+     backgroundColor = "red";
+     break;
+   case "error":
+     backgroundColor = "blue";
+     break;
+   default:
+     backgroundColor = "gray";
+   }
 
     Toastify({
       text: toastMessage,
@@ -58,7 +72,7 @@ include "view.php";
       position: "right",
       style: {
         background: backgroundColor,
-        color: "black" // Optional: Set text color for better visibility on yellow
+        color: "black"
       }
     }).showToast();
   }
