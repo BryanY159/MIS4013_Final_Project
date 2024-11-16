@@ -21,9 +21,10 @@ if (isset($_POST['actionType'])) {
       break;
     case "Edit":     
       if (editAttendance($_POST['BID'], $_POST['EID'], $_POST['Status'])) {
-        echo '<div class="alert alert-success" role="alert"> Attendance Edited Successfully </div>';
+        $toastMessage = "Attendance Edited Successfully";
       } else {
-        echo '<div class="alert alert-danger" role="alert"> Error: Attendance Not Edited </div>';
+        $toastMessage = "Error: Attendance Not Edited";
+        $toastType = "error";
       }
       break;
   }
@@ -37,5 +38,8 @@ else {
 $events = selectEvents();
 
 include "view.php";
+
+?><script src="path/to/myscript.js"></script><?php
+
 include "../universal/view-footer.php";
 ?>
