@@ -18,7 +18,9 @@
       <div class="p-3 border rounded bg-white text-center" style="height: 500px;">Chart 2</div>
     </div>
     <div class="col-md-6">
-      <div class="p-3 border rounded bg-white text-center" style="height: 500px;">Chart 3</div>
+      <div class="p-3 border rounded bg-white text-center" style="height: 500px;">
+        <?php include "chart-files/majors-chart.php"; ?>
+      </div>
     </div>
     <div class="col-md-6">
       <div class="p-3 border rounded bg-white text-center" style="height: 500px;">Chart 4</div>
