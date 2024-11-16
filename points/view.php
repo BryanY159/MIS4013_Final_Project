@@ -60,7 +60,7 @@
                 <?php }
               ?>
             </td>
-            <td style="width: 100px; text-align: center;"><button class="btn btn-warning">Edit</button></td>
+            <td style="width: 100px; text-align: center;"><?php include "buttons/edit-button.php"; ?></td>
           </tr>
         <?php } ?>
     </tbody>
