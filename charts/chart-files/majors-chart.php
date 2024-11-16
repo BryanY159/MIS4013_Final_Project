@@ -1,8 +1,8 @@
-<div id="sectionChart" style="width: 600px; height: 400px;"></div>
+<div id="majorsChart" style="width: 600px; height: 400px;"></div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    const chartDom = document.getElementById('sectionChart');
+    const chartDom = document.getElementById('majorsChart');
     const myChart = echarts.init(chartDom);
     
     const option = {
