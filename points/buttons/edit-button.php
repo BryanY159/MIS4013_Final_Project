@@ -19,6 +19,18 @@
           </div>
           <input type="hidden" name="BID" value="<?php echo $brother['BrotherID']; ?>">
           <input type="hidden" name="actionType" value="Edit">
+          <?php
+            if(isset($_POST['filter'])) {
+              switch ($_POST['filter']) {
+                case "Complete":
+                  ?> <input type="hidden" name="filter" value="Complete"> <?php
+                  break;
+                case "Incomplete":
+                  ?> <input type="hidden" name="filter" value="Incomplete"> <?php
+                  break;
+              }
+            }
+          ?>
           <button type="submit" name="editPointsForm" class="btn btn-primary">Submit</button>
         </form>
       </div>
