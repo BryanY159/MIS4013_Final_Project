@@ -3,7 +3,7 @@ if($count == 1) {
   $edit_data_step = "2";
 } ?>
 
-<button type="button" class="btn btn-warning" data-step="<?php echo edit_data_step;?>" data-bs-toggle="modal" data-bs-target="#editBrotherModalForID:<?php echo $brother['BrotherID'];?>" id="editButtonForID<?php echo $brother['BrotherID'];?>">Edit</button>
+<button type="button" class="btn btn-warning" data-step="<?php echo $edit_data_step;?>" data-bs-toggle="modal" data-bs-target="#editBrotherModalForID:<?php echo $brother['BrotherID'];?>" id="editButtonForID<?php echo $brother['BrotherID'];?>">Edit</button>
 
 <div class="modal fade" id="editBrotherModalForID:<?php echo $brother['BrotherID'];?>" tabindex="-1" aria-labelledby="editBrotherModalLabel" aria-hidden="true">
   <div class="modal-dialog">
