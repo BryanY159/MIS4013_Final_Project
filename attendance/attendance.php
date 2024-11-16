@@ -40,7 +40,7 @@ $events = selectEvents();
 
 include "view.php";
 
-?>//<script src="../universal/toastify.php"></script><?php
+?><script src="../universal/toastify.php"></script><?php
 
 include "../universal/view-footer.php";
 ?>
