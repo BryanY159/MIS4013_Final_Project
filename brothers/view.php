@@ -4,7 +4,7 @@
   </div>
   <div class = "col-auto">
     <?php include "buttons/add-button.php";?>
-    <button class="btn btn-info">Need help?</button>
+    <button class="btn btn-info" onclick="startIntro()">Need help?</button>
   </div>
 </div>
 
@@ -59,3 +59,4 @@
 </div>
 
 <?php include "buttons/delete-button-alert.php";?>
+<?php include "buttons/help-button-function.php";?>
