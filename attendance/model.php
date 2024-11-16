@@ -96,6 +96,23 @@ function selectEvents() {
     }
 }
 
+function selectBrothersForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT B.BrotherID, B.FirstName, B.LastName
+                                FROM Brothers B
+                                LEFT JOIN Attendance A ON B.BrotherID = A.BrotherID
+                                WHERE A.BrotherID IS NULL");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
 function addAttendance($BID) {
     try {
         $conn = get_db_connection();
