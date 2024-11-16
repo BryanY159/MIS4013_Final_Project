@@ -3,7 +3,7 @@
     const steps = [
       {
         intro: "Here you can view, add, edit, and delete all brother information.",
-        title: "Full Roster",
+        title: "Full Roster Page",
       },
       {
         element: '[data-step="1"]',
