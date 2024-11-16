@@ -14,4 +14,18 @@ function selectBrothers() {
     }
 }
 
+function editPoints($BID, $SP, $BP) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("UPDATE Brothers SET ServicePoints = ?, BrotherhoodPoints = ? WHERE BrotherID = ?");
+        $stmt->bind_param("iii", $SP, $BP, $BID);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
 ?>
