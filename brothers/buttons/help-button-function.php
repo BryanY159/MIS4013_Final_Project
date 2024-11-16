@@ -20,7 +20,7 @@
       {
         element: '[data-step="3"]',
         intro: "Click the respective delete button if you would like to delete a brother from the database. This action cannot be undone and will erase all brother, point, and attendance data.",
-        title: "Edit Button",
+        title: "Delete Button",
         position: 'left'
       },
       {
