@@ -12,7 +12,7 @@
           <div class="row">
             <div class="mb-3">
               <label for="BID" class="form-label">Brother</label>
-              <?php $brothers = selectBrothers(); ?>
+              <?php $brothers = selectBrothersForInput(); ?>
               <select class="form-select" id="BID" name="BID">
                 <?php while($brother = $brothers->fetch_assoc()) { ?>
                   <option value="<?php echo $brother['BrotherID']; ?>"><?php echo $brother['FirstName']; ?> <?php echo $brother['LastName']; ?></option>
