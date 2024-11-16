@@ -17,10 +17,13 @@ if (isset($_POST['actionType'])) {
       $SP = $_POST['SP'];
       $BP = $_POST['BP'];
     
-      if($SP < 0 || $BP < 0) {
+      if($SP < 0) {
         $SP = 0;
+      }  
+
+      if($BP < 0) {
         $BP = 0;
-      }      
+      }   
       
       if (editPoints($_POST['BID'], $SP, $BP)) {
         $toastMessage = "Points Edited Successfully";
