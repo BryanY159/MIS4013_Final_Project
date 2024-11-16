@@ -2,11 +2,11 @@
   function startIntro() {
     const steps = [
       {
-        intro: "Here you can view, add, edit, and delete all brother information."
+        intro: "Here you can view, add, edit, and delete all brother information.",
         title: "Full Roster",
       },
       {
-        element: '#addBrotherButton',
+        element: '[data-step="1"]',
         intro: "Click this add button if you would like to add a new brother into the database. Just fill out the form that appears and hit submit!",
         title: "Add Button",
         position: 'left'
