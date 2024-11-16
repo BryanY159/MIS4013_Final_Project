@@ -1,5 +1,5 @@
 <?php $edit_data_step = "";
-if($count == 1) 
+if($count == 1) {
   $edit_data_step = "2";
 } ?>
 
