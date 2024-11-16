@@ -4,7 +4,6 @@
   </div>
   <div class = "col-auto">
     <?php include "buttons/add-button.php";?>
-    <button class="btn btn-secondary">Filter</button>
     <button class="btn btn-info">Need help?</button>
   </div>
 </div>
