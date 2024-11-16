@@ -32,7 +32,7 @@
       yAxis: {
         type: 'value',
         axisLabel: {
-          formatter: '{value} units'
+          formatter: '{value} brothers'
         }
       },
       series: [{
