@@ -25,7 +25,7 @@
       },
       series: [
         {
-          name: 'Data',
+          name: 'Brother Count',
           type: 'pie',
           radius: '50%',
           data: [
