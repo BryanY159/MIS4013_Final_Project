@@ -32,8 +32,9 @@
       yAxis: {
         type: 'value',
         axisLabel: {
-          formatter: '{value} brothers'
-        }
+          formatter: function(value) {
+            return value + ' brothers';  // Correctly append 'brothers' to the value
+          }
       },
       series: [{
         name: 'Data',
