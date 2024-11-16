@@ -84,7 +84,7 @@
             </div>
           </div>
           <input type="hidden" name="actionType" value="Add">
-          <button type="submit" class="btn btn-primary">Add Brother</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
     </div>
