@@ -42,7 +42,14 @@
       series: [{
         name: 'Data',
         type: 'bar',
-        data: [65, 59, 80, 81, 56, 55, 40],
+        data: [
+          <?php
+            $majors = selectMajors();
+            while($major = $majors->fetch_assoc()) {
+              echo $major['Count'].", ";
+            } 
+          ?>
+        ],
         itemStyle: {
           color: '#09268a'
         },
