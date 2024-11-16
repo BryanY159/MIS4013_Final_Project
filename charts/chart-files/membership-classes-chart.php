@@ -23,7 +23,7 @@
         bottom: 'bottom',
         data: [   
           <?php 
-            $mcClasses = selectSections();
+            $mcClasses = selectMembershipClasses();
             while($mcClass = $mcClasses->fetch_assoc()) {
               echo "'".$mcClass['MembershipClass']."', ";
             }
@@ -37,7 +37,7 @@
           radius: '50%',
           data: [
             <?php 
-              $mcClasses = selectSections();
+              $mcClasses = selectMembershipClasses();
               while($mcClass = $mcClasses->fetch_assoc()) {
                 echo "{ value: ".$mcClass['Count'].", name: '".$mcClass['MembershipClass']."' }, ";
               }
