@@ -28,7 +28,7 @@ if(isset($_POST['filter'])) {
       $brothers = selectCompleteBrothers();
       break;
     case "Incomplete":
-      $brothers = selectInompleteBrothers();
+      $brothers = selectIncompleteBrothers();
       break;
   }
 }
