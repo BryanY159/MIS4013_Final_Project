@@ -14,9 +14,11 @@ if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Add":     
       if (addAttendance($_POST['BID'])) {
-        echo '<div class="alert alert-success" role="alert"> Attendance Added Successfully </div>';
+        $toastMessage = "Attendance Added Successfully";
+        $toastType = "edit";
       } else {
-        echo '<div class="alert alert-danger" role="alert"> Error: Attendance Not Added </div>';
+        $toastMessage = "Error: Attendance Not Added";
+        $toastType = "error";
       }
       break;
     case "Edit":     
