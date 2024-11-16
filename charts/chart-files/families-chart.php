@@ -39,7 +39,7 @@
             <?php 
               $families = selectFamilies();
               while($family = $families->fetch_assoc()) {
-                echo "{ value: ".$family['Count'].", name: '".family['Family']."' }, ";
+                echo "{ value: ".$family['Count'].", name: '".$family['Family']."' }, ";
               }
             ?>
           ],
