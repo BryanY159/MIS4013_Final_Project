@@ -1,9 +1,9 @@
-<div id="myChart" style="width: 600px; height: 400px;"></div>
+<div id="sectionsChart" style="width: 600px; height: 400px;"></div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    const chartDom = document.getElementById('myChart');
-    const myChart = echarts.init(chartDom);
+    const chartDom = document.getElementById('sectionsChart');
+    const sectionsChart = echarts.init(chartDom);
     
     const option = {
       title: {
@@ -23,6 +23,6 @@
         data: [65, 59, 80, 81, 56, 55, 40]
       }]
     };
-    myChart.setOption(option);
+    sectionsChart.setOption(option);
   });
 </script>
