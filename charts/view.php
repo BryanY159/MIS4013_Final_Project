@@ -15,7 +15,9 @@
       </div>
     </div>
     <div class="col-md-6">
-      <div class="p-3 border rounded bg-white text-center" style="height: 500px;">Chart 2</div>
+      <div class="p-3 border rounded bg-white text-center" style="height: 500px;">
+        <?php include "chart-files/families-chart.php"; ?>
+      </div>
     </div>
     <div class="col-md-6">
       <div class="p-3 border rounded bg-white text-center" style="height: 500px;">
@@ -28,10 +30,14 @@
       </div>
     </div>
     <div class="col-md-6">
-      <div class="p-3 border rounded bg-white text-center" style="height: 500px;">Chart 5</div>
+      <div class="p-3 border rounded bg-white text-center" style="height: 500px;">
+        <?php include "chart-files/membership-classes-chart.php"; ?>
+      </div>
     </div>
     <div class="col-md-6">
-      <div class="p-3 border rounded bg-white text-center" style="height: 500px;">Chart 6</div>
+      <div class="p-3 border rounded bg-white text-center" style="height: 500px;">
+        <?php include "chart-files/graduation-years-chart.php"; ?>
+      </div>
     </div>
   </div>
 </div>
