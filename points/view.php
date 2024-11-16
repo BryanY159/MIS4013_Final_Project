@@ -11,11 +11,11 @@
   <table class="table">
     <thead>
       <tr>
-        <th>Name</th>
-        <th>Completed?</th>
-        <th>Service Points</th>
-        <th>Brotherhood Points</th>
-        <th></th>
+        <th style="width: 160px;">Name</th>
+        <th style="width: 100px; text-align: center;">Completed?</th>
+        <th style="width: 100px; text-align: center;">Service Points</th>
+        <th style="width: 100px; text-align: center;">Brotherhood Points</th>
+        <th style="width: 100px;"></th>
       </tr>
     </thead>
     <tbody>
@@ -59,7 +59,7 @@
                 <?php }
               ?>
             </td>
-            <td><button class="btn btn-warning">Edit</button></td>
+            <td style="width: 100px; text-align: center;"><button class="btn btn-warning">Edit</button></td>
           </tr>
         <?php } ?>
     </tbody>
