@@ -4,7 +4,7 @@
   </div>
   <div class="col">
     <?php if (isset($_POST['filter'])) { ?>
-      <button type="submit" onclick="location.href='points.php'" class="btn btn-danger" style="float: right;>Back</button>
+      <button type="submit" onclick="location.href='points.php'" class="btn btn-danger" style="float: right;">Back</button>
     <?php }  else { ?>
       <button class="btn btn-info" style="float: right;">Need help?</button>
     <?php } ?>
