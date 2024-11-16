@@ -19,7 +19,7 @@
         <th style="width: 160px;">Name</th>
         <th style="width: 100px; text-align: center;">Completed?</th>
         <th style="width: 100px; text-align: center;">Service Points</th>
-        <th style="width: 130px; text-align: center;">Brotherhood Points</th>
+        <th style="width: 150px; text-align: center;">Brotherhood Points</th>
         <th style="width: 100px;"></th>
       </tr>
     </thead>
