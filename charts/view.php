@@ -10,7 +10,9 @@
 
   <div class="row g-4">
     <div class="col-md-6">
-      <div class="p-3 border rounded bg-white text-center" style="height: 300px;">Chart 1</div>
+      <div class="p-3 border rounded bg-white text-center" style="height: 300px;">
+        <?php include "chart-files/sections-chart.php"; ?>
+      </div>
     </div>
     <div class="col-md-6">
       <div class="p-3 border rounded bg-white text-center" style="height: 300px;">Chart 2</div>
