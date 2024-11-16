@@ -33,8 +33,9 @@
         type: 'value',
         axisLabel: {
           formatter: function(value) {
-            return value + ' brothers';  // Correctly append 'brothers' to the value
+            return value + ' brothers';
           }
+        }
       },
       series: [{
         name: 'Data',
