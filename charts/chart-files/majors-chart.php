@@ -1,4 +1,4 @@
-<div id="majorsChart" style="width: 100%; height: 400px;"></div>
+<div id="majorsChart" style="width: 100%; height: 100%;"></div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
