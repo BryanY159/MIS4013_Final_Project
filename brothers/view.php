@@ -57,3 +57,5 @@
     </tbody>
   </table>
 </div>
+
+<?php include "buttons/delete-button-alert.php;" ?>
