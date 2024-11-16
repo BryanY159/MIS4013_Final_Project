@@ -1,11 +1,12 @@
-<div class = "row">
-  <div class = "col">
+<div class="row" style="width: 50%;"> <!-- Match the table width -->
+  <div class="col">
     <h1>Points</h1>
   </div>
-  <div class="col ms-auto">
-    <button class="btn btn-info">Need help?</button>
+  <div class="col">
+    <button class="btn btn-info" style="float: right;">Need help?</button>
   </div>
 </div>
+
 
 <div class="table-responsive" style="max-height: 500px; overflow-y: auto;">
   <table class="table" style="width: 50%;">
