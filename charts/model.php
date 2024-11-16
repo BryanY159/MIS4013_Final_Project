@@ -72,7 +72,7 @@ function selectMinors() {
     }
 }
 
-function selectMembershipClass() {
+function selectMembershipClasses() {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT MembershipClass, COUNT(BrotherID) AS Count FROM Brothers GROUP BY MembershipClass");
@@ -86,7 +86,7 @@ function selectMembershipClass() {
     }
 }
 
-function selectGraduationYear() {
+function selectGraduationYears() {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT GraduationYear, COUNT(BrotherID) AS Count FROM Brothers GROUP BY GraduationYear ORDER BY GraduationYear");
