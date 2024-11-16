@@ -2,11 +2,13 @@
   function startIntro() {
     const steps = [
       {
-        intro: "This is the Full Roster Page. Here you can view all information about our brothers."
+        intro: "Here you can view, add, edit, and delete all brother information."
+        title: "Full Roster",
       },
       {
         element: '#addBrotherButton',
         intro: "Click this add button if you would like to add a new brother into the database. Just fill out the form that appears and hit submit!",
+        title: "Add Button",
         position: 'left'
       },
       {
