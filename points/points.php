@@ -23,12 +23,14 @@ if (isset($_POST['actionType'])) {
 }
 
 if(isset($_POST['filter'])) {
-  case "Complete":
-    $brothers = selectCompleteBrothers();
-    break;
-  case "Incomplete":
-    $brothers = selectInompleteBrothers();
-    break;
+  switch ($_POST['filter']) {
+    case "Complete":
+      $brothers = selectCompleteBrothers();
+      break;
+    case "Incomplete":
+      $brothers = selectInompleteBrothers();
+      break;
+  }
 }
 else {
   $brothers = selectBrothers();
