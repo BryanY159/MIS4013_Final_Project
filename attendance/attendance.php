@@ -39,7 +39,7 @@ $events = selectEvents();
 
 include "view.php";
 
-?><script src="path/to/myscript.js"></script><?php
+?><script src="../universal/toastify-script.js"></script><?php
 
 include "../universal/view-footer.php";
 ?>
