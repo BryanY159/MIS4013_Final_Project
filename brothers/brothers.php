@@ -26,9 +26,11 @@ if (isset($_POST['actionType'])) {
       if (addBrother($_POST['FN'], $_POST['LN'], $MC, $IY, $_POST['GY'], 
                      $_POST['Major'], $_POST['Major2'], $_POST['Minor'], $_POST['Minor2'], 
                      $_POST['Status'], $_POST['SID'], $SP, $BP)) {
-        echo '<div class="alert alert-success" role="alert"> Brother Added Successfully </div>';
+        $toastMessage = "Brother Added Successfully";
+        $toastType = "add";
       } else {
-        echo '<div class="alert alert-danger" role="alert"> Error: Brother Not Added </div>';
+        $toastMessage = "Error: Brother Not Added";
+        $toastType = "error";
       }
       break;
     case "Edit":
@@ -45,19 +47,24 @@ if (isset($_POST['actionType'])) {
       if (editBrother($_POST['BID'], $_POST['FN'], $_POST['LN'], $MC, $IY, $_POST['GY'], 
                       $_POST['Major'], $_POST['Major2'], $_POST['Minor'], $_POST['Minor2'], 
                       $_POST['Status'], $_POST['SID'], $SP, $BP)) {
-        echo '<div class="alert alert-success" role="alert"> Brother Edited Successfully </div>';
+        $toastMessage = "Brother Edited Successfully";
+        $toastType = "edit";
       } else {
-        echo '<div class="alert alert-danger" role="alert"> Error: Brother Not Edited </div>';
+        $toastMessage = "Error: Brother Not Edited";
+        $toastType = "error";
       }
       break;
     case "Delete":
       if (deleteBrother($_POST['BID'])) {
-        echo '<div class="alert alert-success" role="alert"> Brother Removed Successfully </div>';
+        $toastMessage = "Brother Deleted Successfully";
+        $toastType = "delete";
       } else {
-        echo '<div class="alert alert-danger" role="alert"> Error: Brother Not Removed </div>';
+        $toastMessage = "Error: Brother Not Deleted";
+        $toastType = "error";
       }
       break;
   }
+  include "../universal/toastify.php";
 }
 
 $brothers = selectBrothers();
