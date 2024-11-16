@@ -16,7 +16,6 @@
         <th style="width: 100px; text-align: center;">Service Points</th>
         <th style="width: 100px; text-align: center;">Brotherhood Points</th>
         <th style="width: 100px;"></th>
-        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -61,7 +60,6 @@
               ?>
             </td>
             <td style="width: 100px; text-align: center;"><button class="btn btn-warning">Edit</button></td>
-            <td></td>
           </tr>
         <?php } ?>
     </tbody>
