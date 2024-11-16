@@ -1,4 +1,9 @@
-<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editBrotherModalForID:<?php echo $brother['BrotherID'];?>" id="editButtonForID<?php echo $brother['BrotherID'];?>">Edit</button>
+<?php if($count == 1) { ?>
+  <button type="button" class="btn btn-warning" data-step="2" data-bs-toggle="modal" data-bs-target="#editBrotherModalForID:<?php echo $brother['BrotherID'];?>" id="editButtonForID<?php echo $brother['BrotherID'];?>">Edit</button>
+<?php }
+else { ?>
+  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editBrotherModalForID:<?php echo $brother['BrotherID'];?>" id="editButtonForID<?php echo $brother['BrotherID'];?>">Edit</button>
+<?php } ?>
 
 <div class="modal fade" id="editBrotherModalForID:<?php echo $brother['BrotherID'];?>" tabindex="-1" aria-labelledby="editBrotherModalLabel" aria-hidden="true">
   <div class="modal-dialog">
