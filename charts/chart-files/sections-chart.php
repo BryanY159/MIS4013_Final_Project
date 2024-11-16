@@ -1,9 +1,9 @@
-<div id="majorsChart" style="width: 100%; height: 100%;"></div>
+<div id="sectionsChart" style="width: 100%; height: 100%;"></div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    const chartDom = document.getElementById('majorsChart');
-    const majorsChart = echarts.init(chartDom);
+    const chartDom = document.getElementById('sectionsChart');
+    const sectionsChart = echarts.init(chartDom);
     
     const option = {
       title: {
@@ -44,6 +44,6 @@
       ]
     };
 
-    majorsChart.setOption(option);
+    sectionsChart.setOption(option);
   });
 </script>
