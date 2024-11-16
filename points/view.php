@@ -26,7 +26,7 @@
             <td><?php echo $brother['FirstName'];?> <?php echo $brother['LastName'];?></td>
             <td style="text-align: center;">
               <?php if($brother['ServicePoints'] >= 5 && $brother['BrotherhoodPoints'] >= 3) { ?> 
-                <form method="post" action="attendance.php">
+                <form method="post" action="points.php">
                   <input type="hidden" name="filter" value="Complete">
                   <button type="submit" class="btn btn-success" style="width: 45px;">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
@@ -35,7 +35,7 @@
                 </form>
               <?php }
               else { ?>
-                <form method="post" action="attendance.php">
+                <form method="post" action="points.php">
                   <input type="hidden" name="filter" value="Incomplete">
                   <button type="submit" class="btn btn-danger" style="width: 45px;">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-down-fill" viewBox="0 0 16 16">
