@@ -29,6 +29,7 @@ if (isset($_POST['actionType'])) {
       }
       break;
   }
+  include "../universal/toastify.php";
 }
 if(isset($_POST['rowBID'])) {
   $attendance = selectBrother($_POST['rowBID']);
@@ -39,8 +40,6 @@ else {
 $events = selectEvents();
 
 include "view.php";
-
-?><script src="../universal/toastify.php"></script><?php
 
 include "../universal/view-footer.php";
 ?>
