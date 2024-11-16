@@ -9,7 +9,6 @@ $pointsClass = "nav-link";
 $attendanceClass = "nav-link";
 
 include "../universal/view-header.php";
-?> <link rel="stylesheet" href="grid-style.css"> <?php
 include "view.php";
 include "../universal/view-footer.php";
 ?>
