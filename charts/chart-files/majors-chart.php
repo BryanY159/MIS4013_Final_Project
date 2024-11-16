@@ -23,7 +23,14 @@
       },
       xAxis: {
         type: 'category',
-        data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+        data: [
+          <?php
+            $majors = selectMajors();
+            while($major = $majors->fetch_assoc()) {
+              echo "'".$major['Major']."', ";
+            } 
+          ?>
+        ],
         axisLabel: {
           interval: 0,
           rotate: 45
