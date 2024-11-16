@@ -15,7 +15,7 @@ if (isset($_POST['actionType'])) {
     case "Add":     
       if (addAttendance($_POST['BID'])) {
         $toastMessage = "Attendance Added Successfully";
-        $toastType = "edit";
+        $toastType = "add";
       } else {
         $toastMessage = "Error: Attendance Not Added";
         $toastType = "error";
