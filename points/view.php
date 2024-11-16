@@ -8,8 +8,8 @@
 </div>
 
 
-<div class="table-responsive" style="max-height: 500px; overflow-y: auto;">
-  <table class="table" style="width: 50%;">
+<div class="table-responsive" style="max-height: 500px; overflow-y: auto; width: 50%; margin: 0;">
+  <table class="table">
     <thead>
       <tr>
         <th style="width: 160px;">Name</th>
