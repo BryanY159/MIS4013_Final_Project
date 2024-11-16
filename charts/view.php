@@ -10,24 +10,24 @@
 
   <div class="row g-4">
     <div class="col-md-6">
-      <div class="p-3 border rounded bg-white text-center" style="height: 300px;">
+      <div class="p-3 border rounded bg-white text-center" style="height: 500px;">
         <?php include "chart-files/sections-chart.php"; ?>
       </div>
     </div>
     <div class="col-md-6">
-      <div class="p-3 border rounded bg-white text-center" style="height: 300px;">Chart 2</div>
+      <div class="p-3 border rounded bg-white text-center" style="height: 500px;">Chart 2</div>
     </div>
     <div class="col-md-6">
-      <div class="p-3 border rounded bg-white text-center" style="height: 300px;">Chart 3</div>
+      <div class="p-3 border rounded bg-white text-center" style="height: 500px;">Chart 3</div>
     </div>
     <div class="col-md-6">
-      <div class="p-3 border rounded bg-white text-center" style="height: 300px;">Chart 4</div>
+      <div class="p-3 border rounded bg-white text-center" style="height: 500px;">Chart 4</div>
     </div>
     <div class="col-md-6">
-      <div class="p-3 border rounded bg-white text-center" style="height: 300px;">Chart 5</div>
+      <div class="p-3 border rounded bg-white text-center" style="height: 500px;">Chart 5</div>
     </div>
     <div class="col-md-6">
-      <div class="p-3 border rounded bg-white text-center" style="height: 300px;">Chart 6</div>
+      <div class="p-3 border rounded bg-white text-center" style="height: 500px;">Chart 6</div>
     </div>
   </div>
 </div>
