@@ -9,13 +9,6 @@ $pointsClass = "nav-link";
 $attendanceClass = "nav-link";
 
 include "../universal/view-header.php";
-?>
-
-<h1>Charts</h1>
-
-<p>Info here</p>
-
-<?php
 include "view.php";
 include "../universal/view-footer.php";
 ?>
