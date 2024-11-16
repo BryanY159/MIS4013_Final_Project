@@ -12,6 +12,13 @@ include "../universal/view-header.php";
 
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
+    case "Add":     
+      if (addAttendance($_POST['BID'])) {
+        echo '<div class="alert alert-success" role="alert"> Attendance Added Successfully </div>';
+      } else {
+        echo '<div class="alert alert-danger" role="alert"> Error: Attendance Not Added </div>';
+      }
+      break;
     case "Edit":     
       if (editAttendance($_POST['BID'], $_POST['EID'], $_POST['Status'])) {
         echo '<div class="alert alert-success" role="alert"> Attendance Edited Successfully </div>';
