@@ -58,4 +58,4 @@
   </table>
 </div>
 
-<?php include "buttons/delete-button-alert.php;" ?>
+<?php include "buttons/delete-button-alert.php";?>
