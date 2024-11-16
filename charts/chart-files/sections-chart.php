@@ -7,8 +7,7 @@
     
     const option = {
       title: {
-        text: 'Monthly Data Distribution',
-        subtext: 'Sample Data for Monthly Analysis',
+        text: 'Brothers by Section',
         left: 'center',
         textStyle: {
           fontSize: 16,
@@ -20,8 +19,8 @@
         formatter: '{a} <br/>{b}: {c} ({d}%)'
       },
       legend: {
-        orient: 'horizontal',  // Change to horizontal for better layout
-        bottom: 'bottom',      // Place legend at the bottom
+        orient: 'horizontal', 
+        bottom: 'bottom',
         data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul']
       },
       series: [
@@ -38,18 +37,9 @@
             { value: 55, name: 'Jun' },
             { value: 40, name: 'Jul' }
           ],
-          itemStyle: {
-            borderRadius: 10,  // Rounded edges for a softer look
-          },
-          label: {
-            show: true,  // Display labels on the pie chart
-            position: 'outside',  // Place labels outside the segments
-            formatter: '{b}: {c} ({d}%)',  // Show both value and percentage
-            fontSize: 14
-          },
           emphasis: {
             itemStyle: {
-              shadowBlur: 5,  // Reduce shadow intensity
+              shadowBlur: 5,
               shadowOffsetX: 0,
               shadowColor: 'rgba(0, 0, 0, 0.2)'
             }
