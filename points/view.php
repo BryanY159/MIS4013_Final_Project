@@ -2,13 +2,13 @@
   <div class = "col">
     <h1>Points</h1>
   </div>
-  <div class = "col-auto">
+  <div class="col ms-auto">
     <button class="btn btn-info">Need help?</button>
   </div>
 </div>
 
 <div class="table-responsive" style="max-height: 500px; overflow-y: auto;">
-  <table class="table">
+  <table class="table" style="width: 50%;">
     <thead>
       <tr>
         <th style="width: 160px;">Name</th>
