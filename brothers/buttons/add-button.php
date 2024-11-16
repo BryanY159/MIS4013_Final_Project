@@ -1,4 +1,4 @@
-<button type="button" class="btn btn-success" id="addBrotherButton" data-bs-toggle="modal" data-bs-target="#addBrotherModal">Add</button>
+<button type="button" class="btn btn-success" data-step="1" data-bs-toggle="modal" data-bs-target="#addBrotherModal">Add</button>
 
 <div class="modal fade" id="addBrotherModal" tabindex="-1" aria-labelledby="addBrotherModalLabel" aria-hidden="true">
   <div class="modal-dialog">
