@@ -7,16 +7,21 @@
     
     const option = {
       title: {
-        text: 'Sample Pie Chart',
-        left: 'center'
+        text: 'Monthly Data Distribution',
+        subtext: 'Sample Data for Monthly Analysis',
+        left: 'center',
+        textStyle: {
+          fontSize: 16,
+          fontWeight: 'bold'
+        }
       },
       tooltip: {
         trigger: 'item',
         formatter: '{a} <br/>{b}: {c} ({d}%)'
       },
       legend: {
-        orient: 'vertical',
-        left: 'left',
+        orient: 'horizontal',  // Change to horizontal for better layout
+        bottom: 'bottom',      // Place legend at the bottom
         data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul']
       },
       series: [
@@ -33,11 +38,20 @@
             { value: 55, name: 'Jun' },
             { value: 40, name: 'Jul' }
           ],
+          itemStyle: {
+            borderRadius: 10,  // Rounded edges for a softer look
+          },
+          label: {
+            show: true,  // Display labels on the pie chart
+            position: 'outside',  // Place labels outside the segments
+            formatter: '{b}: {c} ({d}%)',  // Show both value and percentage
+            fontSize: 14
+          },
           emphasis: {
             itemStyle: {
-              shadowBlur: 10,
+              shadowBlur: 5,  // Reduce shadow intensity
               shadowOffsetX: 0,
-              shadowColor: 'rgba(0, 0, 0, 0.5)'
+              shadowColor: 'rgba(0, 0, 0, 0.2)'
             }
           }
         }
