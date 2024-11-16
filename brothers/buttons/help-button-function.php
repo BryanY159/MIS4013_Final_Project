@@ -18,7 +18,14 @@
         position: 'left'
       },
       {
-        intro: "Temp"
+        element: '[data-step="3"]',
+        intro: "Click the respective delete button if you would like to delete a brother from the database. This action cannot be undone and will erase all brother, point, and attendance data.",
+        title: "Edit Button",
+        position: 'left'
+      },
+      {
+        intro: "Additional Information",
+        title: "You can edit Point information here, but it can only be viewed outside the edit window on the Points page. Attendance can only be viewed and edited on the Attendance page.",
       }
     ];
     introJs().setOptions({
