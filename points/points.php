@@ -13,7 +13,16 @@ include "../universal/view-header.php";
 if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Edit":
-      if (editPoints($_POST['BID'], $_POST['SP'], $_POST['BP'])) {
+
+      $SP = $_POST['SP'];
+      $BP = $_POST['BP'];
+    
+      if($SP < 0 || $BP < 0) {
+        $SP = 0;
+        $BP = 0;
+      }      
+      
+      if (editPoints($_POST['BID'], $SP, $BP)) {
         $toastMessage = "Points Edited Successfully";
         $toastType = "edit";
       } else {
