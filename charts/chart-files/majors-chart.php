@@ -1,4 +1,4 @@
-<div id="majorsChart" style="width: 100%; height: 100%;"></div>
+<div id="majorsChart" style="width: 100%; height: 95%;"></div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -40,7 +40,7 @@
         type: 'value'
       },
       series: [{
-        name: 'Data',
+        name: 'Brother Count',
         type: 'bar',
         data: [
           <?php
