@@ -14,12 +14,15 @@ if (isset($_POST['actionType'])) {
   switch ($_POST['actionType']) {
     case "Edit":
       if (editPoints($_POST['BID'], $_POST['SP'], $_POST['BP'])) {
-        echo '<div class="alert alert-success" role="alert"> Points Edited Successfully </div>';
+        $toastMessage = "Points Edited Successfully";
+        $toastType = "edit";
       } else {
-        echo '<div class="alert alert-danger" role="alert"> Error: Points Not Edited </div>';
+        $toastMessage = "Error: Points Not Edited";
+        $toastType = "error";
       }
       break;
   }
+  include "../universal/toastify.php";
 }
 
 if(isset($_POST['filter'])) {
