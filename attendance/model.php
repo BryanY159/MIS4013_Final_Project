@@ -82,7 +82,6 @@ function selectBrother($BID) {
     }
 }
 
-
 function selectEvents() {
     try {
         $conn = get_db_connection();
@@ -91,6 +90,33 @@ function selectEvents() {
         $result = $stmt->get_result();
         $conn->close();
         return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function addAttendance($BID) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("
+        INSERT INTO Attendance (BrotherID, EventID, AttendanceStatus)
+        VALUES
+            (?, 1, 'Present'),
+            (?, 2, 'Present'),
+            (?, 3, 'Present'),
+            (?, 4, 'Present'),
+            (?, 5, 'Present'),
+            (?, 6, 'Present'),
+            (?, 7, 'Present'),
+            (?, 8, 'Present'),
+            (?, 9, 'Present'),
+            (?, 10, 'Present')
+        ");
+        $stmt->bind_param("iiiiiiiiii", $BID, $BID, $BID, $BID, $BID, $BID, $BID, $BID, $BID, $BID);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
     } catch (Exception $e) {
         $conn->close();
         throw $e;
