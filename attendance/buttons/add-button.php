@@ -9,7 +9,6 @@
       </div>
       <div class="modal-body">
         <form method="post" action="">
-          <div class="row">
             <div class="mb-3">
               <label for="BID" class="form-label">Brother</label>
               <?php $brothers = selectBrothersForInput(); ?>
