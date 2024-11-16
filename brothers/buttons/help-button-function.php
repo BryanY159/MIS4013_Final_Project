@@ -24,8 +24,8 @@
         position: 'left'
       },
       {
-        intro: "Additional Information",
-        title: "You can edit Point information here, but it can only be viewed outside the edit window on the Points page. Attendance can only be viewed and edited on the Attendance page.",
+        intro: "You can edit Point information here, but it can only be viewed outside the edit window on the Points page. Attendance can only be viewed and edited on the Attendance page.",
+        title: "Additional Information",
       }
     ];
     introJs().setOptions({
