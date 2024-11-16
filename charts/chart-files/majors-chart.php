@@ -1,4 +1,4 @@
-<div id="majorsChart" style="width: 100%; height: 95%;"></div>
+<div id="majorsChart" style="width: 100%; height: 100%;"></div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -33,7 +33,14 @@
         ],
         axisLabel: {
           interval: 0,
-          rotate: 45
+          rotate: 45,
+          formatter: function(value) {
+            const words = value.split(' ');
+            if (words.length > 1) {
+              return words.join('\n');
+            }
+            return value;
+          },
         }
       },
      yAxis: {
