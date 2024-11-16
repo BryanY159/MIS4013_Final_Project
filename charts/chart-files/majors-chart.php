@@ -3,7 +3,7 @@
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     const chartDom = document.getElementById('majorsChart');
-    const myChart = echarts.init(chartDom);
+    const majorsChart = echarts.init(chartDom);
     
     const option = {
       title: {
@@ -44,6 +44,6 @@
       ]
     };
 
-    myChart.setOption(option);
+    majorsChart.setOption(option);
   });
 </script>
