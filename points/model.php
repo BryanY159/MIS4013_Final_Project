@@ -14,6 +14,35 @@ function selectBrothers() {
     }
 }
 
+function selectCompleteBrothers() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT BrotherID, FirstName, LastName, ServicePoints, BrotherhoodPoints FROM Brothers WHERE (ServicePoints >= 5) AND (BrotherhoodPoints >= 3) ORDER BY FirstName, LastName;");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+function selectIncompleteBrothers() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT BrotherID, FirstName, LastName, ServicePoints, BrotherhoodPoints FROM Brothers 
+                                WHERE ((ServicePoints < 5) OR (BrotherhoodPoints < 3)) AND (ServicePoints > 0) ORDER BY FirstName, LastName;");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
 function editPoints($BID, $SP, $BP) {
     try {
         $conn = get_db_connection();
