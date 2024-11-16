@@ -7,8 +7,8 @@
     
     const option = {
       title: {
-        text: 'Monthly Data by Major',
-        subtext: 'Sample Data for Majors',
+        text: 'Brothers by Major',
+        subtext: 'Includes Major and Major2',
         left: 'center',
         textStyle: {
           fontSize: 16,
@@ -25,14 +25,14 @@
         type: 'category',
         data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
         axisLabel: {
-          interval: 0,  // Show all labels
-          rotate: 45    // Rotate labels if needed
+          interval: 0,
+          rotate: 45
         }
       },
       yAxis: {
         type: 'value',
         axisLabel: {
-          formatter: '{value} units'  // Add units to the y-axis values
+          formatter: '{value} brothers'
         }
       },
       series: [{
@@ -40,13 +40,8 @@
         type: 'bar',
         data: [65, 59, 80, 81, 56, 55, 40],
         itemStyle: {
-          color: '#4b9cd3'  // Customize bar color
+          color: '#4b9cd3'
         },
-        label: {
-          show: true,
-          position: 'top',  // Display labels on top of bars
-          formatter: '{c}'  // Show the value
-        }
       }]
     };
     majorsChart.setOption(option);
