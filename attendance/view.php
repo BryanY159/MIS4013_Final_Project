@@ -4,7 +4,7 @@
   </div>
   <div class = "col-auto">
     <?php if (!isset($_POST['rowBID'])) { ?>
-      <button class="btn btn-success">Add</button>
+      <?php include "buttons/add-button.php"; ?>
       <button class="btn btn-info">Need help?</button>
     <?php } ?>
   </div>
