@@ -12,6 +12,12 @@
         position: 'left'
       },
       {
+        element: '[data-step="2"]',
+        intro: "Click the respective edit button if you would like to edit a brother's information. Just fill out the form that appears and hit submit!",
+        title: "Edit Button",
+        position: 'left'
+      },
+      {
         intro: "Temp"
       }
     ];
