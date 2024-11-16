@@ -26,7 +26,9 @@
     </thead>
     <tbody>
       <?php
-        while($brother = $brothers->fetch_assoc()) { ?>
+        $count = 0; // For help button
+        while($brother = $brothers->fetch_assoc()) { 
+          $count ++; ?>
           <tr>
             <td><?php echo $brother['FirstName'];?> <?php echo $brother['LastName'];?></td>
             <td><?php echo $brother['SectionName'];?></td>
