@@ -25,7 +25,7 @@ for ($i = 1; $i <= 10; $i++) {
           <input type="hidden" name="BID" value="<?php echo $brother['BrotherID']; ?>">
           <input type="hidden" name="EID" value="<?php echo $i; ?>">
           <input type="hidden" name="Status" value="Present">
-          <input type="hidden" name="actionType" value="Edit2">
+          <input type="hidden" name="actionType" value="Edit">
           <button class="dropdown-item" type="submit">Present</button>
         </form>
       </li>
@@ -37,7 +37,7 @@ for ($i = 1; $i <= 10; $i++) {
           <input type="hidden" name="BID" value="<?php echo $brother['BrotherID']; ?>">
           <input type="hidden" name="EID" value="<?php echo $i; ?>">
           <input type="hidden" name="Status" value="Excused">
-          <input type="hidden" name="actionType" value="Edit2">
+          <input type="hidden" name="actionType" value="Edit">
           <button class="dropdown-item" type="submit">Excused</button>
         </form>
       </li>
@@ -49,7 +49,7 @@ for ($i = 1; $i <= 10; $i++) {
           <input type="hidden" name="BID" value="<?php echo $brother['BrotherID']; ?>">
           <input type="hidden" name="EID" value="<?php echo $i; ?>">
           <input type="hidden" name="Status" value="Unexcused">
-          <input type="hidden" name="actionType" value="Edit2">
+          <input type="hidden" name="actionType" value="Edit">
           <button class="dropdown-item" type="submit">Unexcused</button>
         </form>
       </li>
