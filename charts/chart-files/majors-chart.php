@@ -29,20 +29,15 @@
           rotate: 45
         }
       },
-      yAxis: {
-        type: 'value',
-        axisLabel: {
-          formatter: function(value) {
-            return value + ' brothers';
-          }
-        }
+     yAxis: {
+        type: 'value'
       },
       series: [{
         name: 'Data',
         type: 'bar',
         data: [65, 59, 80, 81, 56, 55, 40],
         itemStyle: {
-          color: '#4b9cd3'
+          color: '#09268a'
         },
       }]
     };
