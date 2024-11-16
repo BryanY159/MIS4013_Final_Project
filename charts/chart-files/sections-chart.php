@@ -25,7 +25,7 @@
           <?php 
             $sections = selectSections();
             while($section = sections->fetch_assoc()) {
-              echo "'".$section['SectionName']."', "
+              echo "'".$section['SectionName']."', ";
             }
           ?>      
         ]
@@ -39,7 +39,7 @@
             <?php 
               $sections = selectSections();
               while($section = sections->fetch_assoc()) {
-                echo "{ value: ".$section['Count'].", name: '".$section['SectionName']."' }, "
+                echo "{ value: ".$section['Count'].", name: '".$section['SectionName']."' }, ";
               }
             ?>
           ],
