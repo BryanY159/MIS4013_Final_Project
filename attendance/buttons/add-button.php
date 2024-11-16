@@ -20,7 +20,7 @@
             </div>
           <p>If no name(s) appears, then all Brothers currently have attendance records.</p>
           <input type="hidden" name="actionType" value="Add">
-          <button type="submit" class="btn btn-primary">Add Attendance</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
     </div>
