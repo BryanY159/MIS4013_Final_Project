@@ -51,7 +51,7 @@
           ?>
         ],
         itemStyle: {
-          color: '# ffc61e'
+          color: '#ffc61e'
         },
       }]
     };
