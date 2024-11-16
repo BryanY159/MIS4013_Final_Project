@@ -21,7 +21,14 @@
       legend: {
         orient: 'horizontal', 
         bottom: 'bottom',
-        data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul']
+        data: [   
+          <?php 
+            $sections = selectSections();
+            while($section = sections->fetch_assoc()) {
+              echo "'".$section['SectionName']."', "
+            }
+          ?>      
+        ]
       },
       series: [
         {
@@ -29,13 +36,12 @@
           type: 'pie',
           radius: '50%',
           data: [
-            { value: 65, name: 'Jan' },
-            { value: 59, name: 'Feb' },
-            { value: 80, name: 'Mar' },
-            { value: 81, name: 'Apr' },
-            { value: 56, name: 'May' },
-            { value: 55, name: 'Jun' },
-            { value: 40, name: 'Jul' }
+            <?php 
+              $sections = selectSections();
+              while($section = sections->fetch_assoc()) {
+                echo "{ value: ".$section['Count'].", name: '".$section['SectionName']."' }, "
+              }
+            ?>
           ],
           emphasis: {
             itemStyle: {
