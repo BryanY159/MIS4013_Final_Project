@@ -13,12 +13,18 @@
       },
       {
         element: '[data-step="2"]',
+        intro: "If you have created a new brother, you will need to add them to the attendance list with this button. They will automatically be marked present for all events.",
+        title: "Add Button",
+        position: 'left'
+      },
+      {
+        element: '[data-step="3"]',
         intro: "This grid of dropdown buttons can be used to edit attendance. Just click and change the status for any brother for any given event.",
         title: "Dropdown Buttons",
         position: 'left'
       },
       {
-        element: '[data-step="3"]',
+        element: '[data-step="4"]',
         intro: "Click the respective edit button if you would like to isolate a brother's attendance to edit. This will help avoid page reloading if you are editing multiple events for the same brother.",
         title: "Edit Button",
         position: 'left'
