@@ -25,29 +25,16 @@
       </tr>
     </thead>
     <tbody>
-      <?php
-        $count = 0; // for help button
-        while($brother = $brothers->fetch_assoc()) { 
-        $count++;
-
-        $total_data_step = "";
-        $dropdown_data_step = "";
-        $edit_data_step = "";
-        if($count == 1) {
-          $total_data_step = "1";
-          $dropdown_data_step = "3";
-          $edit_data_step = "4";
-        }
-          ?>
+      <?php while($brother = $brothers->fetch_assoc()) { ?>
           <tr>
             <td><?php echo $brother['FirstName'];?> <?php echo $brother['LastName'];?></td>
             <td>
               <?php
                 if($brother['Unexcused_Absences'] > 4) { ?>
-                  <button class="btn btn-danger btn-sm" data-step="<?php echo $total_data_step;?>" style="width: 45px;"><?php echo $brother['Unexcused_Absences'];?></button>
+                  <button class="btn btn-danger btn-sm" style="width: 45px;"><?php echo $brother['Unexcused_Absences'];?></button>
                 <?php }
                 else { ?>
-                  <button class="btn btn-success btn-sm" data-step="<?php echo $total_data_step;?>" style="width: 45px;"><?php echo $brother['Unexcused_Absences'];?></button>
+                  <button class="btn btn-success btn-sm" style="width: 45px;"><?php echo $brother['Unexcused_Absences'];?></button>
                 <?php }
               ?>
             </td>
@@ -58,7 +45,7 @@
               else { ?>
                 <form method="post" action="attendance.php">
                   <input type="hidden" name="rowBID" value="<?php echo $brother['BrotherID']; ?>">
-                  <button type="submit" class="btn btn-warning btn-sm" data-step="<?php echo $edit_data_step;?>">Edit</button>
+                  <button type="submit" class="btn btn-warning btn-sm">Edit</button>
                 </form>
               <?php } ?>
             </td>
