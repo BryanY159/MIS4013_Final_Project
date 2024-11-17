@@ -37,7 +37,6 @@
           $points_data_step = "2";
           $edit_data_step = "3";
         } 
-      
           ?>
           <tr>
             <td><?php echo $brother['FirstName'];?> <?php echo $brother['LastName'];?></td>
