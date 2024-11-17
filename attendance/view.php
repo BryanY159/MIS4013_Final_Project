@@ -5,7 +5,7 @@
   <div class = "col-auto">
     <?php if (!isset($_POST['rowBID'])) { ?>
       <?php include "buttons/add-button.php"; ?>
-      <button class="btn btn-info">Need help?</button>
+      <button class="btn btn-info" onclick="startIntro()">Need help?</button>
     <?php } ?>
   </div>
 </div>
@@ -26,16 +26,30 @@
     </thead>
     <tbody>
       <?php
-        while($brother = $attendance->fetch_assoc()) { ?>
+        $count = 0; // for help buttom
+        while($brother = $brothers->fetch_assoc()) { 
+        $count++; 
+
+        $total_data_step = "";
+        $add_data_step = "";
+        $dropdown_data_step = "";
+        $edit_data_step = "";
+        if($count == 1) {
+          $total_data_step = "1";
+          $add_data_step = "2";
+          $dropdown_data_step = "3";
+          $edit_data_step = "4";
+        }
+          ?>
           <tr>
             <td><?php echo $brother['FirstName'];?> <?php echo $brother['LastName'];?></td>
             <td>
               <?php
                 if($brother['Unexcused_Absences'] > 4) { ?>
-                  <button class="btn btn-danger btn-sm" style="width: 45px;"><?php echo $brother['Unexcused_Absences'];?></button>
+                  <button class="btn btn-danger btn-sm" data-step="<?php echo $total_data_step;?>" style="width: 45px;"><?php echo $brother['Unexcused_Absences'];?></button>
                 <?php }
                 else { ?>
-                  <button class="btn btn-success btn-sm" style="width: 45px;"><?php echo $brother['Unexcused_Absences'];?></button>
+                  <button class="btn btn-success btn-sm" data-step="<?php echo $total_data_step;?>" style="width: 45px;"><?php echo $brother['Unexcused_Absences'];?></button>
                 <?php }
               ?>
             </td>
@@ -46,7 +60,7 @@
               else { ?>
                 <form method="post" action="attendance.php">
                   <input type="hidden" name="rowBID" value="<?php echo $brother['BrotherID']; ?>">
-                  <button type="submit" class="btn btn-warning btn-sm">Edit</button>
+                  <button type="submit" class="btn btn-warning btn-sm" data-step="<?php echo $edit_data_step;?>">Edit</button>
                 </form>
               <?php } ?>
             </td>
@@ -56,3 +70,5 @@
     </tbody>
   </table>
 </div>
+
+<?php include "buttons/help-button-function.php";?>
