@@ -55,5 +55,3 @@
     </tbody>
   </table>
 </div>
-
-<?php include "buttons/help-button-function.php";?>
