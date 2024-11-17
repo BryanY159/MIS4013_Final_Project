@@ -31,12 +31,10 @@
         $count++; 
 
         $total_data_step = "";
-        $add_data_step = "";
         $dropdown_data_step = "";
         $edit_data_step = "";
         if($count == 1) {
           $total_data_step = "1";
-          $add_data_step = "2";
           $dropdown_data_step = "3";
           $edit_data_step = "4";
         }
