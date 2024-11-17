@@ -26,9 +26,9 @@
     </thead>
     <tbody>
       <?php
-        $count = 0; // for help buttom
+        $count = 0; // for help button
         while($brother = $brothers->fetch_assoc()) { 
-        $count++; 
+        $count++;
 
         $total_data_step = "";
         $dropdown_data_step = "";
