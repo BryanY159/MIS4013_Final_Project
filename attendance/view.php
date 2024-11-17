@@ -5,7 +5,7 @@
   <div class = "col-auto">
     <?php if (!isset($_POST['rowBID'])) { ?>
       <?php include "buttons/add-button.php"; ?>
-      <button class="btn btn-info" onclick="startIntro()">Need help?</button>
+      <button class="btn btn-info">Need help?</button>
     <?php } ?>
   </div>
 </div>
