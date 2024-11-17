@@ -7,7 +7,7 @@
       },
       {
         element: '[data-step="1"]',
-        intro: "These icons will show you if a brother has completed their point requirements, 5 service points and 3 brotherhood points. Clicking this icon will also filter the page by completed or incompleted brothers. You can unfilter by refreshing the page or clicking the back button that will replace the help button after filtering.",
+        intro: "These icons will show you if a brother has completed their point requirements. Clicking this icon will also filter the page by completed or incompleted brothers. You can unfilter by refreshing the page or clicking the back button.",
         title: "Completed Column",
         position: 'bottom' // Tooltip appears below the target
       },
@@ -24,28 +24,15 @@
         position: 'left'
       },
       {
-        intro: "Conditional members do not have point requirements, so they won't appear on this list. Point values of -1 are for conditional members.",
+        intro: "Our requirements are 5 service points and 3 brotherhood points. Conditional members do not have point requirements, so they won't appear on this list.",
         title: "Additional Information",
       }
     ];
-
     introJs().setOptions({
-      steps: steps,
-      scrollToElement: true,
-      scrollPadding: 20
+      steps: steps
     })
     .start()
-    .onbeforechange(function (targetElement) {
-      const tableContainer = document.querySelector('.table-responsive');
-      if (tableContainer) {
-        tableContainer.style.overflow = 'visible';
-      }
-    })
-    .onexit(function () {
-      const tableContainer = document.querySelector('.table-responsive');
-      if (tableContainer) {
-        tableContainer.style.overflow = 'auto';
-      }
+    .onexit(function() {
     });
   }
 </script>
