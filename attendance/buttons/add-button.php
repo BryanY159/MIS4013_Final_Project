@@ -1,4 +1,4 @@
-<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addAttendanceModal">Add</button>
+<button type="button" class="btn btn-success" data-step="<?php echo $total_data_step;?>" data-bs-toggle="modal" data-bs-target="#addAttendanceModal">Add</button>
 
 <div class="modal fade" id="addAttendanceModal" tabindex="-1" aria-labelledby="addAttendanceModalLabel" aria-hidden="true">
   <div class="modal-dialog">
