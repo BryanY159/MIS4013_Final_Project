@@ -9,7 +9,6 @@
         element: '[data-step="1"]',
         intro: "These icons will show you if a brother has completed their point requirements, 5 service points and 3 brotherhood points. Clicking this icon will also filter the page by completed or incompleted brothers. You can unfilter by refreshing the page or clicking the back button that will replace the help button after filtering.",
         title: "Completed Column",
-        position: 'bottom'
       },
       {
         element: '[data-step="2"]',
