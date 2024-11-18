@@ -17,7 +17,7 @@ include "universal/view-header.php";
 </div>
 
 <div class = "row">
-  <div class = "col">
+  <div class="col-6">
     <div class="card">
       <h5 class="card-header">Brothers - Full Roster</h5>
       <div class="card-body">
@@ -35,7 +35,7 @@ include "universal/view-header.php";
       </div>
     </div>
   </div>
-  <div class = "col-auto">
+  <div class="col-6">
     <div class="card">
       <h5 class="card-header">Brothers - Charts</h5>
       <div class="card-body">
