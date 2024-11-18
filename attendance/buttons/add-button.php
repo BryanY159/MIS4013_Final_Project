@@ -18,7 +18,7 @@
                 <?php } ?>
               </select>  
             </div>
-          <p>If no name(s) appears, then all Brothers currently have attendance records.</p>
+          <p>If no names appear, then all Brothers currently have attendance records.</p>
           <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
