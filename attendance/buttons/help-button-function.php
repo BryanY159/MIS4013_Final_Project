@@ -25,7 +25,7 @@
       },
       {
         element: '[data-step="4"]',
-        intro: "Click the respective edit button if you would like to isolate a brother's attendance to edit. This will help avoid page reloading if you are editing multiple events for the same brother.",
+        intro: "Click the respective edit button if you would like to isolate a brother's attendance to edit. This will help avoid rescrolling if you are editing multiple events for the same brother.",
         title: "Edit Button",
         position: 'left'
       },
