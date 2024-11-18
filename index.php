@@ -16,35 +16,35 @@ include "universal/view-header.php";
   </div>
 </div>
 <div class="card">
-  <h5 class="card-header">Featured</h5>
+  <h5 class="card-header">Brothers - Full Roster</h5>
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="brothers/brothers.php" class="btn btn-primary">Full Roster</a>
   </div>
 </div>
 <div class="card">
-  <h5 class="card-header">Featured</h5>
+  <h5 class="card-header">Brothers - Charts</h5>
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="charts/charts.php" class="btn btn-primary">Charts</a>
   </div>
 </div>
 <div class="card">
-  <h5 class="card-header">Featured</h5>
+  <h5 class="card-header">Points</h5>
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="points/points.php" class="btn btn-primary">Points</a>
   </div>
 </div>
 <div class="card">
-  <h5 class="card-header">Featured</h5>
+  <h5 class="card-header">Attendance</h5>
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="attendance/attendance.php" class="btn btn-primary">Attendance</a>
   </div>
 </div>
 
