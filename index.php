@@ -22,7 +22,7 @@ include "universal/view-header.php";
       <h5 class="card-header">Brothers - Full Roster</h5>
       <div class="card-body">
         <p class="card-text">Here you can view all infomation about the brothers in our chapter.</p>
-        <a href="brothers/brothers.php" class="btn btn-primary">Full Roster</a>
+        <a href="brothers/brothers.php" class="btn btn-danger">Full Roster</a>
       </div>
     </div>
     <div class="card">
@@ -38,14 +38,14 @@ include "universal/view-header.php";
       <h5 class="card-header">Brothers - Charts</h5>
       <div class="card-body">
         <p class="card-text">Here you can view charts of our chapter demographics.</p>
-        <a href="charts/charts.php" class="btn btn-primary">Charts</a>
+        <a href="charts/charts.php" class="btn btn-warning">Charts</a>
       </div>
     </div>
     <div class="card">
       <h5 class="card-header">Attendance</h5>
       <div class="card-body">
         <p class="card-text">Here you can view how we're doing with attendance for events.</p>
-        <a href="attendance/attendance.php" class="btn btn-primary">Attendance</a>
+        <a href="attendance/attendance.php" class="btn btn-success">Attendance</a>
       </div>
     </div>
   </div>
